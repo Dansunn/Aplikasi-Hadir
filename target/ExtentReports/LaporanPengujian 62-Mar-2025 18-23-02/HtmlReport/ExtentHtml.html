@@ -1,0 +1,3559 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'></span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Mar 3, 2025 06:23:02 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@pulangCepat</a></li>
+					<li><a href='#'>@medium</a></li>
+					<li><a href='#'>@posisi</a></li>
+					<li><a href='#'>@negative</a></li>
+					<li><a href='#'>@major</a></li>
+					<li><a href='#'>@terlambat</a></li>
+					<li><a href='#'>@test</a></li>
+					<li><a href='#'>@off</a></li>
+					<li><a href='#'>@koreksi</a></li>
+					<li><a href='#'>@unitSetting</a></li>
+					<li><a href='#'>@positive</a></li>
+					<li><a href='#'>@Import</a></li>
+					<li><a href='#'>@izin</a></li>
+					<li><a href='#'>@Negative</a></li>
+					<li><a href='#'>@critical</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Features</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='$84%'>
+                    <span class='strong'>16</span> features passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='15%'>
+                    3</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Scenarios</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='child-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='90%'>
+                    <span class='strong'>30</span> scenarios passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='9%'>
+                    3</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+        <div class='col s12 m4 l4 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Steps</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='grandchild-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='98%'>
+                    <span class='strong'>229</span> steps passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='1%'>
+                    3</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Absen Masuk dan Keluar</span>
+						<span class='test-time'>Mar 3, 2025 06:23:07 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario outline node' test-id='2' status='pass'>
+
+	<span class='duration right label'>00 04 32.706</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: Absensi masuk dan keluar dan keluar dalam satu hari</div>
+	</div>
+	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>email</td><td>password</td><td>status</td><td>masuk</td><td>keluar</td></tr><tr><td>hadirsqa38@gmail.com</td><td>SQA@Hadir12345</td><td>Work From Home</td><td>Hadir</td><td></td></tr><tr><td>hadirsqa37@gmail.com</td><td>SQA@Hadir12345</td><td>Work From Home</td><td></td><td>Balik</td></tr><tr><td>hadirsqa36@gmail.com</td><td>SQA@Hadir12345</td><td>Work From Office</td><td>Hadir</td><td></td></tr><tr><td>hadirsqa20@gmail.com</td><td>SQA@Hadir12345</td><td>Work From Office</td><td></td><td>Balik</td></tr></table></div>
+	
+	
+	<ul class='steps'>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='4' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User melakukan login dengan "hadirsqa38@gmail.com" dan "SQA@Hadir12345"</h6>
+
+				</li>
+				<li test-id='5' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk</h6>
+
+				</li>
+				<li test-id='6' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Kamera</h6>
+
+				</li>
+				<li test-id='7' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi form absen masuk dengan "Work From Home" dan "Hadir"</h6>
+
+				</li>
+				<li test-id='8' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk untuk submit absen</h6>
+
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='10' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</h6>
+
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menekan tombol keluar pada history absensi</h6>
+
+				</li>
+				<li test-id='12' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi "" pada bagian notes pulang</h6>
+
+				</li>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Keluar</h6>
+
+				</li>
+				<li test-id='14' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User kembali menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='15' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User tidak lagi melihat tombol keluar</h6>
+
+				</li>
+				<li test-id='16' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User melakukan logout</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='17' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='18' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User melakukan login dengan "hadirsqa37@gmail.com" dan "SQA@Hadir12345"</h6>
+
+				</li>
+				<li test-id='19' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk</h6>
+
+				</li>
+				<li test-id='20' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Kamera</h6>
+
+				</li>
+				<li test-id='21' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi form absen masuk dengan "Work From Home" dan ""</h6>
+
+				</li>
+				<li test-id='22' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk untuk submit absen</h6>
+
+				</li>
+				<li test-id='23' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='24' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</h6>
+
+				</li>
+				<li test-id='25' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menekan tombol keluar pada history absensi</h6>
+
+				</li>
+				<li test-id='26' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi "Balik" pada bagian notes pulang</h6>
+
+				</li>
+				<li test-id='27' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Keluar</h6>
+
+				</li>
+				<li test-id='28' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User kembali menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='29' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User tidak lagi melihat tombol keluar</h6>
+
+				</li>
+				<li test-id='30' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User melakukan logout</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='31' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='32' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User melakukan login dengan "hadirsqa36@gmail.com" dan "SQA@Hadir12345"</h6>
+
+				</li>
+				<li test-id='33' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk</h6>
+
+				</li>
+				<li test-id='34' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Kamera</h6>
+
+				</li>
+				<li test-id='35' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi form absen masuk dengan "Work From Office" dan "Hadir"</h6>
+
+				</li>
+				<li test-id='36' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk untuk submit absen</h6>
+
+				</li>
+				<li test-id='37' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='38' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</h6>
+
+				</li>
+				<li test-id='39' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menekan tombol keluar pada history absensi</h6>
+
+				</li>
+				<li test-id='40' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi "" pada bagian notes pulang</h6>
+
+				</li>
+				<li test-id='41' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Keluar</h6>
+
+				</li>
+				<li test-id='42' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User kembali menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='43' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User tidak lagi melihat tombol keluar</h6>
+
+				</li>
+				<li test-id='44' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User melakukan logout</h6>
+
+				</li>
+			</ul>
+		</li>
+		<li test-id='45' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+
+
+			<ul class='gc steps'>
+				<li test-id='46' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User melakukan login dengan "hadirsqa20@gmail.com" dan "SQA@Hadir12345"</h6>
+
+				</li>
+				<li test-id='47' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk</h6>
+
+				</li>
+				<li test-id='48' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Kamera</h6>
+
+				</li>
+				<li test-id='49' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi form absen masuk dengan "Work From Office" dan ""</h6>
+
+				</li>
+				<li test-id='50' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Masuk untuk submit absen</h6>
+
+				</li>
+				<li test-id='51' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='52' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</h6>
+
+				</li>
+				<li test-id='53' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User menekan tombol keluar pada history absensi</h6>
+
+				</li>
+				<li test-id='54' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User mengisi "Balik" pada bagian notes pulang</h6>
+
+				</li>
+				<li test-id='55' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User klik tombol Absen Keluar</h6>
+
+				</li>
+				<li test-id='56' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User kembali menunggu halaman selesai dimuat ulang</h6>
+
+				</li>
+				<li test-id='57' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User tidak lagi melihat tombol keluar</h6>
+
+				</li>
+				<li test-id='58' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="com.aplikasihadir.steps.Absen.Absen.doLogout()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User melakukan logout</h6>
+
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='59' status='pass'>
+
+	<span class='duration right label'>00 00 15.507</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Negative</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='60' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.Absen.AbsenMasukDouble.login(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User melakukan login dengan email "hadirsqa16@gmail.com" dan password "SQA@Hadir12345"</div>
+
+
+		</li>
+		<li test-id='61' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.Absen.AbsenMasukDouble.verifyBtnAbsenMasuk())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User mencoba mencari tombol masuk dan tombol masuk sudah tidak ada</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='62' status='pass'>
+
+	<span class='duration right label'>00 00 12.065</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Negative</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='63' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.Absen.AbsenKeluarDouble.ScrollToKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given User mencoba mencari tombol keluar</div>
+
+
+		</li>
+		<li test-id='64' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.Absen.AbsenKeluarDouble.verifyTombolKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Ternyata tombol keluar sudah tidak ada</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='65'>
+					<div class='test-heading'>
+						<span class='test-name'>Pengujian Fitur Koreksi Absen di Aplikasi Hadir</span>
+						<span class='test-time'>Mar 3, 2025 06:28:07 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='66' status='pass'>
+
+	<span class='duration right label'>00 00 44.837</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@koreksi</span>
+				<span class='category label'>@test</span>
+				<span class='category label'>@positive</span>
+				<span class='category label'>@medium</span>
+				<span class='category label'>@critical</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='67' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.doLogin(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna Login menggunakan email "tejo@gmail.com" dan password "tejo@123"</div>
+
+
+		</li>
+		<li test-id='68' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.scrollToMenuKoreksiAbsen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna melakukan scroll mengarah ke menu koreksi absen</div>
+
+
+		</li>
+		<li test-id='69' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickMenuKoreksiAbsen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan menu Koreksi Absen</div>
+
+
+		</li>
+		<li test-id='70' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickAjukanKoreksiButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna menekan tombol Ajukan Koreksi</div>
+
+
+		</li>
+		<li test-id='71' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJamMasukButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan  field Jam Masuk</div>
+
+
+		</li>
+		<li test-id='72' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickTahun_Bulan_tanggal())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih Tahun, Bulan, Tanggal</div>
+
+
+		</li>
+		<li test-id='73' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJam_Menit())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih Jam dan Menit</div>
+
+
+		</li>
+		<li test-id='74' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickFieldJamKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih field Jam Keluar</div>
+
+
+		</li>
+		<li test-id='75' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickTahun_Bulan_TanggalJamKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih Tahun, Bulan, Tanggal Jam Keluar</div>
+
+
+		</li>
+		<li test-id='76' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJam_MenitKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih Jam dan Menit Jam Keluar</div>
+
+
+		</li>
+		<li test-id='77' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickFieldTipeAbsen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan field  Tipe Absen</div>
+
+
+		</li>
+		<li test-id='78' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickWFHButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih WFO</div>
+
+
+		</li>
+		<li test-id='79' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan tombol Ajukan</div>
+
+
+		</li>
+		<li test-id='80' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.verifyElement())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pengguna akan melihat text Total akan bertambah</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='81' status='pass'>
+
+	<span class='duration right label'>00 00 37.115</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@koreksi</span>
+				<span class='category label'>@test</span>
+				<span class='category label'>@positive</span>
+				<span class='category label'>@medium</span>
+				<span class='category label'>@critical</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='82' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickAjukanKoreksiButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna1 menekan tombol Ajukan Koreksi</div>
+
+
+		</li>
+		<li test-id='83' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJamMasukButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna1 menekan  field Jam Masuk</div>
+
+
+		</li>
+		<li test-id='84' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickTahun_Bulan_tanggal())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 memilih Tahun, Bulan, Tanggal</div>
+
+
+		</li>
+		<li test-id='85' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJam_Menit())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 memilih Jam dan Menit</div>
+
+
+		</li>
+		<li test-id='86' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickFieldJamKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 memilih field Jam Keluar</div>
+
+
+		</li>
+		<li test-id='87' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickTahun_Bulan_TanggalJamKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 memilih Tahun, Bulan, Tanggal Jam Keluar</div>
+
+
+		</li>
+		<li test-id='88' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJam_MenitKeluar())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 memilih Jam dan Menit Jam Keluar</div>
+
+
+		</li>
+		<li test-id='89' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickFieldTipeAbsen())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 menekan field  Tipe Absen</div>
+
+
+		</li>
+		<li test-id='90' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickWFHButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 memilih WFH</div>
+
+
+		</li>
+		<li test-id='91' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 menekan tombol Ajukan</div>
+
+
+		</li>
+		<li test-id='92' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.verifyElement())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pengguna1 akan melihat text Total akan bertambah</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='93' status='pass'>
+
+	<span class='duration right label'>00 00 10.264</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@koreksi</span>
+				<span class='category label'>@test</span>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@medium</span>
+				<span class='category label'>@critical</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='94' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.clickAjukanKoreksiButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna2 menekan tombol Ajukan Koreksi</div>
+
+
+		</li>
+		<li test-id='95' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna2 menekan tombol Ajukan</div>
+
+
+		</li>
+		<li test-id='96' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.verifyElement(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pengguna2 akan melihat alert "Salah satu harus diisi!"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='97' status='pass'>
+
+	<span class='duration right label'>00 00 17.225</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@koreksi</span>
+				<span class='category label'>@test</span>
+				<span class='category label'>@positive</span>
+				<span class='category label'>@medium</span>
+				<span class='category label'>@critical</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='98' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickJamMasukButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna3 menekan  field Jam Masuk</div>
+
+
+		</li>
+		<li test-id='99' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickTahun_Bulan_tanggal())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna3 memilih Tahun, Bulan, Tanggal</div>
+
+
+		</li>
+		<li test-id='100' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickJam_Menit())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna3 memilih Jam dan Menit</div>
+
+
+		</li>
+		<li test-id='101' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna3 menekan tombol Ajukan</div>
+
+
+		</li>
+		<li test-id='102' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.verifyElement())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pengguna3 akan melihat text Total akan bertambah</div>
+
+
+		</li>
+		<li test-id='103' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickBackButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna 3 keluar dari halaman koreksi absen</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='104'>
+					<div class='test-heading'>
+						<span class='test-name'>Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile</span>
+						<span class='test-time'>Mar 3, 2025 06:29:56 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='105' status='pass'>
+
+	<span class='duration right label'>00 00 23.273</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@test</span>
+				<span class='category label'>@izin</span>
+				<span class='category label'>@major</span>
+				<span class='category label'>@terlambat</span>
+				<span class='category label'>@positive</span>
+				<span class='category label'>@medium</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='106' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.scrollToMenuIzin())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna melakukan scroll mengarah ke menu izin</div>
+
+
+		</li>
+		<li test-id='107' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickMenuIzinButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna klik menu izin</div>
+
+
+		</li>
+		<li test-id='108' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickAjukanIzinTerlambatButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna klik tombol ajukan izin terlambat</div>
+
+
+		</li>
+		<li test-id='109' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickTanggalButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna isi field tanggal</div>
+
+
+		</li>
+		<li test-id='110' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickJamButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna isi field Jam</div>
+
+
+		</li>
+		<li test-id='111' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.fillKeteranganTextArea())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna isi field keterangan</div>
+
+
+		</li>
+		<li test-id='112' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna klik tombol ajukan</div>
+
+
+		</li>
+		<li test-id='113' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.verifyElement(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul notifikasi "Permintaan izin terlambat sebelumnya belum di approve"</div>
+
+
+		</li>
+		<li test-id='114' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.refreshBrowser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna merefresh halaman</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='115' status='pass'>
+
+	<span class='duration right label'>00 00 04.500</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan pengajuan izin terlambat dengan mengosongkan semua field</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@test</span>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@izin</span>
+				<span class='category label'>@major</span>
+				<span class='category label'>@terlambat</span>
+				<span class='category label'>@medium</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='116' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.clickTombolAjukanIzinTerlambat())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna1 klik tombol ajukan izin terlambat</div>
+
+
+		</li>
+		<li test-id='117' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.clickTombolAjukan())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna1 klik tombol ajukan</div>
+
+
+		</li>
+		<li test-id='118' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.verifyElementText(java.lang.String,java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul notifikasi "Tanggal Harus diisi!", "Jam Harus diisi!", "Keterangan Harus diisi!"</div>
+
+
+		</li>
+		<li test-id='119' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.refreshBrowser())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 merefresh halaman</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='120'>
+					<div class='test-heading'>
+						<span class='test-name'>Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile</span>
+						<span class='test-time'>Mar 3, 2025 06:30:24 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='121' status='pass'>
+
+	<span class='duration right label'>00 00 13.137</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@pulangCepat</span>
+				<span class='category label'>@test</span>
+				<span class='category label'>@izin</span>
+				<span class='category label'>@major</span>
+				<span class='category label'>@positive</span>
+				<span class='category label'>@medium</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='122' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickMenuPulangCepatButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna1 klik tombol pulang cepat dihalaman izin</div>
+
+
+		</li>
+		<li test-id='123' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickAjukanIzinPulangCepatButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna1 klik tombol ajukan izin pulang cepat</div>
+
+
+		</li>
+		<li test-id='124' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickTanggalPulangCepatButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 isi field tanggal</div>
+
+
+		</li>
+		<li test-id='125' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickJamPulangCepatButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 isi field Jam</div>
+
+
+		</li>
+		<li test-id='126' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.fillKeteranganPulangCepat())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 isi field keterangan</div>
+
+
+		</li>
+		<li test-id='127' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickTombolAjukanPulangCepat())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Klik tombol ajukan</div>
+
+
+		</li>
+		<li test-id='128' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.verifyElement())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Text Total akan bertambah</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='129' status='pass'>
+
+	<span class='duration right label'>00 00 03.453</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@pulangCepat</span>
+				<span class='category label'>@test</span>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@izin</span>
+				<span class='category label'>@major</span>
+				<span class='category label'>@medium</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='130' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.clickAjukanIzinPulangCepat())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna2 klik tombol ajukan izin pulang cepat</div>
+
+
+		</li>
+		<li test-id='131' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.clickAnjukanPulangCepatButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna2 klik tombol ajukan</div>
+
+
+		</li>
+		<li test-id='132' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.verifyElementText(java.lang.String,java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul pesan error "Tanggal Harus diisi!", "Jam Harus diisi!", "Keterangan Harus diisi!"</div>
+
+
+		</li>
+		<li test-id='133' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.refresh())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna2 merefresh halaman</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='134'>
+					<div class='test-heading'>
+						<span class='test-name'>Pengujian Fitur Izin Off di Aplikasi Hadir Mobile</span>
+						<span class='test-time'>Mar 3, 2025 06:30:41 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='135' status='pass'>
+
+	<span class='duration right label'>00 00 11.946</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@test</span>
+				<span class='category label'>@off</span>
+				<span class='category label'>@izin</span>
+				<span class='category label'>@positive</span>
+				<span class='category label'>@medium</span>
+				<span class='category label'>@critical</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='136' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickMenuIzinOffButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna klik tombol izin off dihalaman izin</div>
+
+
+		</li>
+		<li test-id='137' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickAjukanIzinOffButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna klik tombol ajukan izin off</div>
+
+
+		</li>
+		<li test-id='138' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickTanggalIzinOffButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna mengisi tanggal izin off</div>
+
+
+		</li>
+		<li test-id='139' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.fillAlasanOffTxtArea())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna mengisi field alasan off</div>
+
+
+		</li>
+		<li test-id='140' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Klik tombol ajukan setelah mengisi semua field</div>
+
+
+		</li>
+		<li test-id='141' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.verifyElementTextIzinOff(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Akan muncul alert "Permintaan dalam proses"</div>
+
+
+		</li>
+		<li test-id='142' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.refresh())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna merefresh halaman izin off</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='143' status='pass'>
+
+	<span class='duration right label'>00 00 05.433</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Melakukan pengajuan izin Off dengan mengosongkan semua field</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@test</span>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@off</span>
+				<span class='category label'>@izin</span>
+				<span class='category label'>@medium</span>
+				<span class='category label'>@critical</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='144' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.clickAjukanIzinOffButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna1 menekan tombol ajukan izin off</div>
+
+
+		</li>
+		<li test-id='145' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.clickAjukanButton())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna1 langsung menekan tombol ajukan</div>
+
+
+		</li>
+		<li test-id='146' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.verifyElementText(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul pesan error "Pilih tanggal off!.", "Alasan dan mengambill izin off."</div>
+
+
+		</li>
+		<li test-id='147' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.refresh())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna1 merefresh halaman izin off</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='148'>
+					<div class='test-heading'>
+						<span class='test-name'>Pengujian Fitur Aplikasi Hadir</span>
+						<span class='test-time'>Mar 3, 2025 06:30:58 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='149' status='pass'>
+
+	<span class='duration right label'>00 00 11.837</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Menguji Upload File dalam Import Status</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Import</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='150' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatus.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna login ke website Hadir dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='151' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatus.clickMenuImport())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan tombol menu Import di bagian kiri menu</div>
+
+
+		</li>
+		<li test-id='152' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatus.clickSubMenuStatusAktif())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan tombol submenu Import Status Aktif</div>
+
+
+		</li>
+		<li test-id='153' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatus.clickBtnChooseFile())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna menekan tombol choose file dan memilih file excel yang diinginkan</div>
+
+
+		</li>
+		<li test-id='154' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatus.clickBtnImport())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan tombol import</div>
+
+
+		</li>
+		<li test-id='155' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatus.verifyImportExcel(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul sebuah notifikasi "Berhasil import excel"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='156' status='pass'>
+
+	<span class='duration right label'>00 00 06.281</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Menguji Upload File dalam Import Status (Selain Excel)</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Import</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='157' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.importFileBukanExcel())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna menekan tombol choose file dan memilih file bukan excel</div>
+
+
+		</li>
+		<li test-id='158' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.clickBtnImport())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan tombol import lagi</div>
+
+
+		</li>
+		<li test-id='159' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.verifyImportFile(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul notifikasi error "*File harus berupa file Excel (.xls atau .xlsx)"</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='160' status='pass'>
+
+	<span class='duration right label'>00 00 01.120</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Mendownload File Template Untuk Data Import</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Import</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='161' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusDownloadTemplate.clickBtnDownloadTemplate())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna menekan tombol download template</div>
+
+
+		</li>
+		<li test-id='162' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusDownloadTemplate.verifyDownloadTemplate())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Pengguna berhasil mendownload file template</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='163' status='pass'>
+
+	<span class='duration right label'>00 00 07.349</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Menguji Upload File Excel Kosongan dalam Import Status</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@Import</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='164' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickMenuImport())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna2 menekan tombol menu Import di bagian kiri menu</div>
+
+
+		</li>
+		<li test-id='165' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickSubMenuStatusAktif())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna2 menekan tombol submenu Import Status Aktif</div>
+
+
+		</li>
+		<li test-id='166' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickBtnChooseFile())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna2 menekan tombol choose file dan memilih file excel kosongan</div>
+
+
+		</li>
+		<li test-id='167' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickBtnImport())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna2 menekan tombol import</div>
+
+
+		</li>
+		<li test-id='168' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.importStatus.ImportStatusKosongan.verifyImportExcel(java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Muncul alert ""</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='169'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Departements Setting</span>
+						<span class='test-time'>Mar 3, 2025 06:31:25 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='170' status='pass'>
+
+	<span class='duration right label'>00 00 13.157</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan departement baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@unitSetting</span>
+				<span class='category label'>@positive</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='171' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna memasukkan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='172' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin tekan menu management</div>
+
+
+		</li>
+		<li test-id='173' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik sub menu unit setting</div>
+
+
+		</li>
+		<li test-id='174' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin tekan tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='175' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin memilih pilihan Credit Card</div>
+
+
+		</li>
+		<li test-id='176' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin tekan tombol tambah</div>
+
+
+		</li>
+		<li test-id='177' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Unit setting berhasil ditambahkan</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='178'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Departements Setting Data Kosong</span>
+						<span class='test-time'>Mar 3, 2025 06:31:38 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='179' status='pass'>
+
+	<span class='duration right label'>00 00 14.983</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan departement baru dengan data kosong</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@unitSetting</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='180' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Pengguna login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='181' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And klik menu management</div>
+
+
+		</li>
+		<li test-id='182' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin tekan sub menu unit setting</div>
+
+
+		</li>
+		<li test-id='183' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin klik tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='184' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin mengisi dengan data kosong</div>
+
+
+		</li>
+		<li test-id='185' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik tombol tambah</div>
+
+
+		</li>
+		<li test-id='186' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Unit setting gagal ditambahkan</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='187'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Departements Setting Data Duplikat</span>
+						<span class='test-time'>Mar 3, 2025 06:31:53 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='188' status='pass'>
+
+	<span class='duration right label'>00 00 13.122</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan departement baru dengan data duplikat</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@unitSetting</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='189' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='190' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan menu management</div>
+
+
+		</li>
+		<li test-id='191' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan sub menu unit setting</div>
+
+
+		</li>
+		<li test-id='192' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When klik tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='193' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And pilih pilihan Credit Card</div>
+
+
+		</li>
+		<li test-id='194' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And klik tombol tambah</div>
+
+
+		</li>
+		<li test-id='195' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then gagal ditambahkan</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='196'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Departements Setting</span>
+						<span class='test-time'>Mar 3, 2025 06:32:06 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='197' status='pass'>
+
+	<span class='duration right label'>00 00 08.772</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan departement baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@unitSetting</span>
+				<span class='category label'>@positive</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='198' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna3 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='199' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan menu management.</div>
+
+
+		</li>
+		<li test-id='200' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And klik sub menu unit setting</div>
+
+
+		</li>
+		<li test-id='201' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin tekan tombol hapus pada data yang akan dihapus</div>
+
+
+		</li>
+		<li test-id='202' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Unit setting berhasil dihapus</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='203'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:32:15 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='204' status='fail'>
+
+	<span class='duration right label'>00 00 27.238</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Admin menambahkan posisi baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@posisi</span>
+				<span class='category label'>@positive</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='205' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna4 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='206' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik menu management</div>
+
+
+		</li>
+		<li test-id='207' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik sub menu posisi</div>
+
+
+		</li>
+		<li test-id='208' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin menekan tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='209' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin mengisi posisi Admin 1</div>
+
+
+		</li>
+		<li test-id='210' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin memilih pilihan departement Credit Card</div>
+
+
+		</li>
+		<li test-id='211' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin menekan tombol tambah</div>
+
+
+		</li>
+		<li test-id='212' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisidefinition.step07())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Posisi berhasil ditambahkan</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at ?.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='213'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:32:42 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='214' status='pass'>
+
+	<span class='duration right label'>00 00 16.122</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan posisi baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@posisi</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='215' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna5 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='216' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given klik menu management.</div>
+
+
+		</li>
+		<li test-id='217' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin tekan sub menu posisi</div>
+
+
+		</li>
+		<li test-id='218' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When tekan tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='219' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin pilih pilihan departement Credit Card</div>
+
+
+		</li>
+		<li test-id='220' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan tombol tambah</div>
+
+
+		</li>
+		<li test-id='221' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Posisi gagal ditambahkan</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='222'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi departemen kosong</span>
+						<span class='test-time'>Mar 3, 2025 06:32:58 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='223' status='pass'>
+
+	<span class='duration right label'>00 00 15.032</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan posisi baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@posisi</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='224' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna6 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='225' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And pengguna tekan menu management</div>
+
+
+		</li>
+		<li test-id='226' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan sub menu posisi</div>
+
+
+		</li>
+		<li test-id='227' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When menekan tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='228' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And mengisi posisi Admin 1</div>
+
+
+		</li>
+		<li test-id='229' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And menekan tombol tambah</div>
+
+
+		</li>
+		<li test-id='230' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Data gagal ditambahkan</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='231'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:33:13 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='232' status='pass'>
+
+	<span class='duration right label'>00 00 13.930</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin menambahkan posisi baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@posisi</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='233' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna7 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='234' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And pengguna klik menu management</div>
+
+
+		</li>
+		<li test-id='235' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And pengguna tekan sub menu posisi</div>
+
+
+		</li>
+		<li test-id='236' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When pengguna menekan tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='237' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And pengguna menekan tombol tambah</div>
+
+
+		</li>
+		<li test-id='238' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then pengguna gagal menambahkan data</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='239'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:33:27 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='240' status='fail'>
+
+	<span class='duration right label'>00 00 27.260</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Admin menambahkan posisi baru</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@posisi</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='241' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna8 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='242' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna klik menu management</div>
+
+
+		</li>
+		<li test-id='243' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna klik sub menu posisi</div>
+
+
+		</li>
+		<li test-id='244' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Pengguna menekan tombol tambahkan</div>
+
+
+		</li>
+		<li test-id='245' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna mengisi posisi Admin 1</div>
+
+
+		</li>
+		<li test-id='246' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna memilih pilihan departement Credit Card</div>
+
+
+		</li>
+		<li test-id='247' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna menekan tombol tambah</div>
+
+
+		</li>
+		<li test-id='248' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Pengguna gagal menambahkan data</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07(posisiDataDuplikatdefinition.java:69)
+	at ?.Pengguna gagal menambahkan data(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/14_TambahPosisiDataDuplikat.feature:12)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='249'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:33:54 PM</span>
+						<span class='test-status right fail'>Fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='250' status='fail'>
+
+	<span class='duration right label'>00 00 39.247</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: Admin mengedit posisi</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@posisi</span>
+				<span class='category label'>@positive</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='251' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna9 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='252' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan menu management</div>
+
+
+		</li>
+		<li test-id='253' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna tekan sub menu posisi</div>
+
+
+		</li>
+		<li test-id='254' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin klik titik tiga pada posisi yang akan diedit</div>
+
+
+		</li>
+		<li test-id='255' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik edit</div>
+
+
+		</li>
+		<li test-id='256' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin mengedit Admin 1 menjadi Admin 2</div>
+
+
+		</li>
+		<li test-id='257' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin menekan tombol simpan</div>
+
+
+		</li>
+		<li test-id='258' class='node then Fail' status='Fail'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editposisidefinition.step07(java.lang.String))"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then List yang diperbaharui menjadi "Admin 2"</div>
+
+
+					<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[(text() = 'Admin 2' or . = 'Admin 2')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//h6[(text() = 'Admin 2' or . = 'Admin 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.aplikasihadir.pages.editposisipage.verify(editposisipage.java:94)
+	at com.aplikasihadir.steps.posisi.editposisidefinition.step07(editposisidefinition.java:62)
+	at ?.List yang diperbaharui menjadi "Admin 2"(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/15_EditPosisi.feature:12)
+</textarea>
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='259'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:34:34 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='260' status='pass'>
+
+	<span class='duration right label'>00 00 18.225</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin mengedit posisi</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@negative</span>
+				<span class='category label'>@posisi</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='261' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna10 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='262' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And klik menu management!</div>
+
+
+		</li>
+		<li test-id='263' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna klik sub menu posisi.</div>
+
+
+		</li>
+		<li test-id='264' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin tekan titik tiga pada posisi yang akan diedit</div>
+
+
+		</li>
+		<li test-id='265' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin tekan edit</div>
+
+
+		</li>
+		<li test-id='266' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin mengosongkan nama posisi</div>
+
+
+		</li>
+		<li test-id='267' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik tombol simpan</div>
+
+
+		</li>
+		<li test-id='268' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step07())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Posisi gagal diedit</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='269'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:34:52 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='270' status='pass'>
+
+	<span class='duration right label'>00 00 23.059</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin hapus posisi</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@posisi</span>
+				<span class='category label'>@positive</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='271' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna11 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='272' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And tekan menu management,</div>
+
+
+		</li>
+		<li test-id='273' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna tekan sub menu posisi,</div>
+
+
+		</li>
+		<li test-id='274' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Admin klik titik tiga pada posisi yang akan dihapus,</div>
+
+
+		</li>
+		<li test-id='275' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik hapus</div>
+
+
+		</li>
+		<li test-id='276' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin klik tombol ya</div>
+
+
+		</li>
+		<li test-id='277' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.hapusposisidefinition.step06())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Data terhapus</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='278'>
+					<div class='test-heading'>
+						<span class='test-name'>Tambah Posisi</span>
+						<span class='test-time'>Mar 3, 2025 06:35:15 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='279' status='pass'>
+
+	<span class='duration right label'>00 00 13.861</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Admin hapus posisi</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@posisi</span>
+				<span class='category label'>@positive</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='280' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.cariposisidefinition.loginHadir(java.lang.String,java.lang.String))"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given pengguna12 login dengan email "admin@hadir.com" dan password "admin@hadir"</div>
+
+
+		</li>
+		<li test-id='281' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.cariposisidefinition.step01())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin tekan menu management,</div>
+
+
+		</li>
+		<li test-id='282' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.cariposisidefinition.step02())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Pengguna tekan sub menu posisi.</div>
+
+
+		</li>
+		<li test-id='283' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.cariposisidefinition.step03())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Ketik nama Admin 2</div>
+
+
+		</li>
+		<li test-id='284' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.cariposisidefinition.step04())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Klik tombol search</div>
+
+
+		</li>
+		<li test-id='285' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(com.aplikasihadir.steps.posisi.cariposisidefinition.step05())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Data Ditemukan</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><div id='category-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='category-collection' class='category-collection'>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@pulangCepat</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:30:24 PM</td>
+										<td class='linked' test-id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:37 PM</td>
+										<td class='linked' test-id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@medium</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:28:07 PM</td>
+										<td class='linked' test-id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:28:52 PM</td>
+										<td class='linked' test-id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:29 PM</td>
+										<td class='linked' test-id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:39 PM</td>
+										<td class='linked' test-id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:56 PM</td>
+										<td class='linked' test-id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:20 PM</td>
+										<td class='linked' test-id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:24 PM</td>
+										<td class='linked' test-id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:37 PM</td>
+										<td class='linked' test-id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:41 PM</td>
+										<td class='linked' test-id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:53 PM</td>
+										<td class='linked' test-id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@posisi</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:32:15 PM</td>
+										<td class='linked' test-id='204'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:42 PM</td>
+										<td class='linked' test-id='214'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:58 PM</td>
+										<td class='linked' test-id='223'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:13 PM</td>
+										<td class='linked' test-id='232'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:27 PM</td>
+										<td class='linked' test-id='240'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:54 PM</td>
+										<td class='linked' test-id='250'>Admin mengedit posisi</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:34:34 PM</td>
+										<td class='linked' test-id='260'>Admin mengedit posisi</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:34:52 PM</td>
+										<td class='linked' test-id='270'>Admin hapus posisi</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:35:15 PM</td>
+										<td class='linked' test-id='279'>Admin hapus posisi</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@negative</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:29:29 PM</td>
+										<td class='linked' test-id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:20 PM</td>
+										<td class='linked' test-id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:37 PM</td>
+										<td class='linked' test-id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:53 PM</td>
+										<td class='linked' test-id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:38 PM</td>
+										<td class='linked' test-id='179'>Admin menambahkan departement baru dengan data kosong</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:53 PM</td>
+										<td class='linked' test-id='188'>Admin menambahkan departement baru dengan data duplikat</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:42 PM</td>
+										<td class='linked' test-id='214'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:58 PM</td>
+										<td class='linked' test-id='223'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:13 PM</td>
+										<td class='linked' test-id='232'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:27 PM</td>
+										<td class='linked' test-id='240'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:34:34 PM</td>
+										<td class='linked' test-id='260'>Admin mengedit posisi</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@major</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:29:56 PM</td>
+										<td class='linked' test-id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:20 PM</td>
+										<td class='linked' test-id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:24 PM</td>
+										<td class='linked' test-id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:37 PM</td>
+										<td class='linked' test-id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@terlambat</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:29:56 PM</td>
+										<td class='linked' test-id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:20 PM</td>
+										<td class='linked' test-id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@test</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:28:07 PM</td>
+										<td class='linked' test-id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:28:52 PM</td>
+										<td class='linked' test-id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:29 PM</td>
+										<td class='linked' test-id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:39 PM</td>
+										<td class='linked' test-id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:56 PM</td>
+										<td class='linked' test-id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:20 PM</td>
+										<td class='linked' test-id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:24 PM</td>
+										<td class='linked' test-id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:37 PM</td>
+										<td class='linked' test-id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:41 PM</td>
+										<td class='linked' test-id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:53 PM</td>
+										<td class='linked' test-id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@off</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:30:41 PM</td>
+										<td class='linked' test-id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:53 PM</td>
+										<td class='linked' test-id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@koreksi</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:28:07 PM</td>
+										<td class='linked' test-id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:28:52 PM</td>
+										<td class='linked' test-id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:29 PM</td>
+										<td class='linked' test-id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:39 PM</td>
+										<td class='linked' test-id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@unitSetting</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:31:25 PM</td>
+										<td class='linked' test-id='170'>Admin menambahkan departement baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:38 PM</td>
+										<td class='linked' test-id='179'>Admin menambahkan departement baru dengan data kosong</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:53 PM</td>
+										<td class='linked' test-id='188'>Admin menambahkan departement baru dengan data duplikat</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:06 PM</td>
+										<td class='linked' test-id='197'>Admin menambahkan departement baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@positive</span>
+						<span class='category-status right'>
+						<span class='label pass'>10</span>
+						<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 10</span>
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:28:07 PM</td>
+										<td class='linked' test-id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:28:52 PM</td>
+										<td class='linked' test-id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:39 PM</td>
+										<td class='linked' test-id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:56 PM</td>
+										<td class='linked' test-id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:24 PM</td>
+										<td class='linked' test-id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:41 PM</td>
+										<td class='linked' test-id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:25 PM</td>
+										<td class='linked' test-id='170'>Admin menambahkan departement baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:06 PM</td>
+										<td class='linked' test-id='197'>Admin menambahkan departement baru</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:32:15 PM</td>
+										<td class='linked' test-id='204'>Admin menambahkan posisi baru</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:54 PM</td>
+										<td class='linked' test-id='250'>Admin mengedit posisi</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:34:52 PM</td>
+										<td class='linked' test-id='270'>Admin hapus posisi</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:35:15 PM</td>
+										<td class='linked' test-id='279'>Admin hapus posisi</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Import</span>
+						<span class='category-status right'>
+						<span class='label pass'>4</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:30:58 PM</td>
+										<td class='linked' test-id='149'>Menguji Upload File dalam Import Status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:10 PM</td>
+										<td class='linked' test-id='156'>Menguji Upload File dalam Import Status (Selain Excel)</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:16 PM</td>
+										<td class='linked' test-id='160'>Mendownload File Template Untuk Data Import</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:31:17 PM</td>
+										<td class='linked' test-id='163'>Menguji Upload File Excel Kosongan dalam Import Status</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@izin</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:29:56 PM</td>
+										<td class='linked' test-id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:20 PM</td>
+										<td class='linked' test-id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:24 PM</td>
+										<td class='linked' test-id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:37 PM</td>
+										<td class='linked' test-id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:41 PM</td>
+										<td class='linked' test-id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:53 PM</td>
+										<td class='linked' test-id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Negative</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:27:39 PM</td>
+										<td class='linked' test-id='59'>Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:27:55 PM</td>
+										<td class='linked' test-id='62'>Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@critical</span>
+						<span class='category-status right'>
+						<span class='label pass'>6</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 6</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:28:07 PM</td>
+										<td class='linked' test-id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:28:52 PM</td>
+										<td class='linked' test-id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:29 PM</td>
+										<td class='linked' test-id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:29:39 PM</td>
+										<td class='linked' test-id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:41 PM</td>
+										<td class='linked' test-id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:30:53 PM</td>
+										<td class='linked' test-id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Mar 3, 2025 06:32:29 PM</td>
+										<td class='linked' test-id='212'>Then Posisi berhasil ditambahkan</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at ?.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:33:41 PM</td>
+										<td class='linked' test-id='248'>Then Pengguna gagal menambahkan data</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at ?.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Mar 3, 2025 06:34:19 PM</td>
+										<td class='linked' test-id='258'>Then List yang diperbaharui menjadi "Admin 2"</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at ?.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>19</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>33</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>232</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Mar 3, 2025 06:23:02 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Mar 3, 2025 06:35:29 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00 12 27.761</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>version</td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>os</td>
+								<td>windows</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Skipped</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>@pulangCepat</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@medium</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@posisi</td>
+							<td>6</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									66.667%
+							</td>
+						</tr>
+						<tr>
+							<td>@negative</td>
+							<td>10</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									90.909%
+							</td>
+						</tr>
+						<tr>
+							<td>@major</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@terlambat</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@test</td>
+							<td>10</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@off</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@koreksi</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@unitSetting</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@positive</td>
+							<td>10</td>
+							<td>2</td>
+							<td>0</td>
+							<td>
+									83.333%
+							</td>
+						</tr>
+						<tr>
+							<td>@Import</td>
+							<td>4</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@izin</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Negative</td>
+							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@critical</td>
+							<td>6</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 19,
+				passParent: 16,
+				failParent: 3,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				childCount: 33,
+				passChild: 30,
+				failChild: 3,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				grandChildCount: 232,
+				passGrandChild: 229,
+				failGrandChild: 3,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+			};
+			</script>
+		
+		<script>
+			var timeline = {
+			        "Absen Masuk dan Keluar":300.299,"Pengujian Fitur Koreksi Absen di Aplikasi Hadir":109.46,"Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile":27.782,"Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile":16.595,"Pengujian Fitur Izin Off di Aplikasi Hadir Mobile":17.386,"Pengujian Fitur Aplikasi Hadir":26.6,"Tambah Departements Setting":13.157,"Tambah Departements Setting Data Kosong":14.983,"Tambah Departements Setting Data Duplikat":13.122,"Tambah Departements Setting":8.772,"Tambah Posisi":27.238,"Tambah Posisi":16.122,"Tambah Posisi departemen kosong":15.032,"Tambah Posisi":13.93,"Tambah Posisi":27.26,"Tambah Posisi":39.248,"Tambah Posisi":18.225,"Tambah Posisi":23.059,"Tambah Posisi":13.861
+			};
+		</script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
+		<script type='text/javascript'>
+				
+		</script> 
+
+	</body>
+</html>

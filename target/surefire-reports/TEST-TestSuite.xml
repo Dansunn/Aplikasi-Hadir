@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="752.965" tests="33" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="G:\applications\Java-program\Aplikasi Hadir-Revisi\target\test-classes;G:\applications\Java-program\Aplikasi Hadir-Revisi\target\classes;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-java\4.27.0\selenium-java-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-api\4.27.0\selenium-api-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.27.0\selenium-chrome-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.27.0\selenium-chromium-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-json\4.27.0\selenium-json-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.27.0\selenium-manager-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.27.0\selenium-devtools-v129-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.27.0\selenium-devtools-v130-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.27.0\selenium-devtools-v131-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.27.0\selenium-devtools-v85-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.27.0\selenium-edge-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.27.0\selenium-firefox-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-http\4.27.0\selenium-http-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.27.0\selenium-ie-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.27.0\selenium-remote-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Glen adam bararaja\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-api\1.44.1\opentelemetry-api-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-context\1.44.1\opentelemetry-context-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.44.1\opentelemetry-exporter-logging-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.44.1\opentelemetry-sdk-common-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.44.1\opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.44.1\opentelemetry-sdk-extension-autoconfigure-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.44.1-alpha\opentelemetry-api-incubator-1.44.1-alpha.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.44.1\opentelemetry-sdk-trace-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.44.1\opentelemetry-sdk-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.44.1\opentelemetry-sdk-metrics-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.44.1\opentelemetry-sdk-logs-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-os\4.27.0\selenium-os-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.27.0\selenium-safari-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-support\4.27.0\selenium-support-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\Glen adam bararaja\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Glen adam bararaja\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Glen adam bararaja\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Glen adam bararaja\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Glen adam bararaja\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Glen adam bararaja\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\Glen adam bararaja\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Glen adam bararaja\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Glen adam bararaja\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Glen adam bararaja\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\Glen adam bararaja\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Glen adam bararaja\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Glen adam bararaja\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Glen adam bararaja\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Glen adam bararaja\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="user.country.format" value="ID"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Glen adam bararaja\AppData\Local\Temp\surefire17613452884705288039\surefirebooter-20250303182300447_3.jar C:\Users\Glen adam bararaja\AppData\Local\Temp\surefire17613452884705288039 2025-03-03T18-23-00_177-jvmRun1 surefire-20250303182300447_1tmp surefire_0-20250303182300447_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="G:\applications\Java-program\Aplikasi Hadir-Revisi\target\test-classes;G:\applications\Java-program\Aplikasi Hadir-Revisi\target\classes;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-java\4.27.0\selenium-java-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-api\4.27.0\selenium-api-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.27.0\selenium-chrome-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.27.0\selenium-chromium-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-json\4.27.0\selenium-json-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.27.0\selenium-manager-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.27.0\selenium-devtools-v129-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.27.0\selenium-devtools-v130-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.27.0\selenium-devtools-v131-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.27.0\selenium-devtools-v85-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.27.0\selenium-edge-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.27.0\selenium-firefox-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-http\4.27.0\selenium-http-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.27.0\selenium-ie-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.27.0\selenium-remote-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Glen adam bararaja\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-api\1.44.1\opentelemetry-api-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-context\1.44.1\opentelemetry-context-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.44.1\opentelemetry-exporter-logging-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.44.1\opentelemetry-sdk-common-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.44.1\opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.44.1\opentelemetry-sdk-extension-autoconfigure-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.44.1-alpha\opentelemetry-api-incubator-1.44.1-alpha.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.44.1\opentelemetry-sdk-trace-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.44.1\opentelemetry-sdk-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.44.1\opentelemetry-sdk-metrics-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.44.1\opentelemetry-sdk-logs-1.44.1.jar;C:\Users\Glen adam bararaja\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-os\4.27.0\selenium-os-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.27.0\selenium-safari-driver-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\seleniumhq\selenium\selenium-support\4.27.0\selenium-support-4.27.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\Glen adam bararaja\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Glen adam bararaja\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Glen adam bararaja\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Glen adam bararaja\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Glen adam bararaja\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\Glen adam bararaja\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Glen adam bararaja\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Glen adam bararaja\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Glen adam bararaja\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\Glen adam bararaja\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Glen adam bararaja\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Glen adam bararaja\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Glen adam bararaja\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\Glen adam bararaja\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Glen adam bararaja\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Glen adam bararaja\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\Glen adam bararaja\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Glen adam bararaja\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Glen adam bararaja\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\logging\log4j\log4j-api\2.18.0\log4j-api-2.18.0.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Glen adam bararaja\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Glen adam bararaja\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Glen adam bararaja"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="G:\applications\Java-program\Aplikasi Hadir-Revisi"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Glen adam bararaja\AppData\Local\Temp\surefire17613452884705288039\surefirebooter-20250303182300447_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="Glen adam bararaja"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Glen adam bararaja\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\GLENAD~1\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2024.3.1"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="G:\applications\Java-program\Aplikasi Hadir-Revisi"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="id"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-19\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Users\Glen adam bararaja\AppData\Roaming\Composer\vendor\bin;C:\Users\Glen adam bararaja\Desktop\adb;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\chromedriver-win64;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-17\bin;C:\Users\Glen adam bararaja\AppData\Local\Android\Sdk\platform-tools;C:\Users\Glen adam bararaja\AppData\Local\Android\Sdk\tools;C:\Users\Glen adam bararaja\AppData\Local\Android\Sdk\tools\bin;C:\scrcpy-win64-v3.1;C:\Users\Glen adam bararaja\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Glen adam bararaja\AppData\Local\Programs\Python\Python313\;C:\Users\Glen adam bararaja\AppData\Local\Programs\Python\Launcher\;C:\Users\Glen adam bararaja\AppData\Local\Microsoft\WindowsApps;;C:\Users\Glen adam bararaja\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Glen adam bararaja\AppData\Roaming\Composer\vendor\bin;C:\Users\Glen adam bararaja\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Absensi masuk dan keluar dan keluar dalam satu hari&quot;, &quot;Absen Masuk dan Keluar&quot;](1)" classname="com.aplikasihadir.runners.RunnerTest" time="67.126">
+    <system-out><![CDATA[
+Scenario Outline: Absensi masuk dan keluar dan keluar dalam satu hari           &amp#27;[90m# src/test/resources/features/00_Absen.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser melakukan login dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"hadirsqa38@gmail.com"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m"SQA@Hadir12345"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Kamera&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi form absen masuk dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"Work From Home"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m"Hadir"&amp#27;[0m         &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk untuk submit absen&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menunggu halaman selesai dimuat ulang&amp#27;[0m                                &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser melihat tanggal &amp#27;[0m&amp#27;[32m&amp#27;[1m"Senin, 03 March 2025"&amp#27;[0m&amp#27;[32m pada history absensi&amp#27;[0m         &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menekan tombol keluar pada history absensi&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m pada bagian notes pulang&amp#27;[0m                                  &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Keluar&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser kembali menunggu halaman selesai dimuat ulang&amp#27;[0m                        &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser tidak lagi melihat tombol keluar&amp#27;[0m                                    &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser melakukan logout&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogout()&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Mar 03, 2025 6:23:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 133, returning the closest version; found: 131; Please update to a Selenium version that supports CDP version 133
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Absensi masuk dan keluar dan keluar dalam satu hari&quot;, &quot;Absen Masuk dan Keluar&quot;](2)" classname="com.aplikasihadir.runners.RunnerTest" time="69.979">
+    <system-out><![CDATA[
+Scenario Outline: Absensi masuk dan keluar dan keluar dalam satu hari           &amp#27;[90m# src/test/resources/features/00_Absen.feature:20&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser melakukan login dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"hadirsqa37@gmail.com"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m"SQA@Hadir12345"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Kamera&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi form absen masuk dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"Work From Home"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m              &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk untuk submit absen&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menunggu halaman selesai dimuat ulang&amp#27;[0m                                &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser melihat tanggal &amp#27;[0m&amp#27;[32m&amp#27;[1m"Senin, 03 March 2025"&amp#27;[0m&amp#27;[32m pada history absensi&amp#27;[0m         &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menekan tombol keluar pada history absensi&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi &amp#27;[0m&amp#27;[32m&amp#27;[1m"Balik"&amp#27;[0m&amp#27;[32m pada bagian notes pulang&amp#27;[0m                             &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Keluar&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser kembali menunggu halaman selesai dimuat ulang&amp#27;[0m                        &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser tidak lagi melihat tombol keluar&amp#27;[0m                                    &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser melakukan logout&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogout()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Absensi masuk dan keluar dan keluar dalam satu hari&quot;, &quot;Absen Masuk dan Keluar&quot;](3)" classname="com.aplikasihadir.runners.RunnerTest" time="65.979">
+    <system-out><![CDATA[
+Scenario Outline: Absensi masuk dan keluar dan keluar dalam satu hari           &amp#27;[90m# src/test/resources/features/00_Absen.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser melakukan login dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"hadirsqa36@gmail.com"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m"SQA@Hadir12345"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Kamera&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi form absen masuk dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"Work From Office"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m"Hadir"&amp#27;[0m       &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk untuk submit absen&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menunggu halaman selesai dimuat ulang&amp#27;[0m                                &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser melihat tanggal &amp#27;[0m&amp#27;[32m&amp#27;[1m"Senin, 03 March 2025"&amp#27;[0m&amp#27;[32m pada history absensi&amp#27;[0m         &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menekan tombol keluar pada history absensi&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m pada bagian notes pulang&amp#27;[0m                                  &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Keluar&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser kembali menunggu halaman selesai dimuat ulang&amp#27;[0m                        &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser tidak lagi melihat tombol keluar&amp#27;[0m                                    &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser melakukan logout&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogout()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Absensi masuk dan keluar dan keluar dalam satu hari&quot;, &quot;Absen Masuk dan Keluar&quot;](4)" classname="com.aplikasihadir.runners.RunnerTest" time="69.977">
+    <system-out><![CDATA[
+Scenario Outline: Absensi masuk dan keluar dan keluar dalam satu hari           &amp#27;[90m# src/test/resources/features/00_Absen.feature:22&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser melakukan login dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"hadirsqa20@gmail.com"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m"SQA@Hadir12345"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogin(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenMasukButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Kamera&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickCameraButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi form absen masuk dengan &amp#27;[0m&amp#27;[32m&amp#27;[1m"Work From Office"&amp#27;[0m&amp#27;[32m dan &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m            &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenInForm(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Masuk untuk submit absen&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doSubmitAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menunggu halaman selesai dimuat ulang&amp#27;[0m                                &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoaded()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser melihat tanggal &amp#27;[0m&amp#27;[32m&amp#27;[1m"Senin, 03 March 2025"&amp#27;[0m&amp#27;[32m pada history absensi&amp#27;[0m         &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeAbsenMasukButton(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser menekan tombol keluar pada history absensi&amp#27;[0m                           &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser mengisi &amp#27;[0m&amp#27;[32m&amp#27;[1m"Balik"&amp#27;[0m&amp#27;[32m pada bagian notes pulang&amp#27;[0m                             &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doFillAbsenOutForm(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser klik tombol Absen Keluar&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doClickAbsenKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser kembali menunggu halaman selesai dimuat ulang&amp#27;[0m                        &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doWaitPageLoadedAgain()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser tidak lagi melihat tombol keluar&amp#27;[0m                                    &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doNotSeeKeluarButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser melakukan logout&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.Absen.Absen.doLogout()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya&quot;, &quot;Absen Masuk dan Keluar&quot;](5)" classname="com.aplikasihadir.runners.RunnerTest" time="15.517">
+    <system-out><![CDATA[
+@Negative
+Scenario: Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya           &amp#27;[90m# src/test/resources/features/00_Absen.feature:25&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser melakukan login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"hadirsqa16@gmail.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"SQA@Hadir12345"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.Absen.AbsenMasukDouble.login(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser mencoba mencari tombol masuk dan tombol masuk sudah tidak ada&amp#27;[0m                      &amp#27;[90m# com.aplikasihadir.steps.Absen.AbsenMasukDouble.verifyBtnAbsenMasuk()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya&quot;, &quot;Absen Masuk dan Keluar&quot;](6)" classname="com.aplikasihadir.runners.RunnerTest" time="12.07">
+    <system-out><![CDATA[
+@Negative
+Scenario: Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya &amp#27;[90m# src/test/resources/features/00_Absen.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser mencoba mencari tombol keluar&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.Absen.AbsenKeluarDouble.ScrollToKeluar()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mTernyata tombol keluar sudah tidak ada&amp#27;[0m                                          &amp#27;[90m# com.aplikasihadir.steps.Absen.AbsenKeluarDouble.verifyTombolKeluar()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen &quot;WFO&quot;&quot;, &quot;Pengujian Fitur Koreksi Absen di Aplikasi Hadir&quot;](7)" classname="com.aplikasihadir.runners.RunnerTest" time="44.85">
+    <system-out><![CDATA[
+@test @koreksi @medium @critical @positive
+Scenario: Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO" &amp#27;[90m# src/test/resources/features/01_KoreksiAbsen.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna Login menggunakan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"tejo@gmail.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"tejo@123"&amp#27;[0m                                   &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.doLogin(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna melakukan scroll mengarah ke menu koreksi absen&amp#27;[0m                                                      &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.scrollToMenuKoreksiAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan menu Koreksi Absen&amp#27;[0m                                                                           &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickMenuKoreksiAbsen()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna menekan tombol Ajukan Koreksi&amp#27;[0m                                                                       &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickAjukanKoreksiButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan  field Jam Masuk&amp#27;[0m                                                                             &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJamMasukButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih Tahun, Bulan, Tanggal&amp#27;[0m                                                                        &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickTahun_Bulan_tanggal()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih Jam dan Menit&amp#27;[0m                                                                                &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJam_Menit()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih field Jam Keluar&amp#27;[0m                                                                             &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickFieldJamKeluar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih Tahun, Bulan, Tanggal Jam Keluar&amp#27;[0m                                                             &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickTahun_Bulan_TanggalJamKeluar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih Jam dan Menit Jam Keluar&amp#27;[0m                                                                     &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJam_MenitKeluar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan field  Tipe Absen&amp#27;[0m                                                                            &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickFieldTipeAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih WFO&amp#27;[0m                                                                                          &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickWFHButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan tombol Ajukan&amp#27;[0m                                                                                &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickAjukanButton()&amp#27;[0m
+✅ Verifikasi sukses! Jumlah List Total Bertambah 102 menjadi 102
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPengguna akan melihat text Total akan bertambah&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.verifyElement()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen &quot;WFH&quot;&quot;, &quot;Pengujian Fitur Koreksi Absen di Aplikasi Hadir&quot;](8)" classname="com.aplikasihadir.runners.RunnerTest" time="37.12">
+    <system-out><![CDATA[
+@test @koreksi @medium @critical @positive
+Scenario: Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH" &amp#27;[90m# src/test/resources/features/01_KoreksiAbsen.feature:21&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna1 menekan tombol Ajukan Koreksi&amp#27;[0m                                                                     &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickAjukanKoreksiButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna1 menekan  field Jam Masuk&amp#27;[0m                                                                           &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJamMasukButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 memilih Tahun, Bulan, Tanggal&amp#27;[0m                                                                       &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickTahun_Bulan_tanggal()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 memilih Jam dan Menit&amp#27;[0m                                                                               &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJam_Menit()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 memilih field Jam Keluar&amp#27;[0m                                                                            &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickFieldJamKeluar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 memilih Tahun, Bulan, Tanggal Jam Keluar&amp#27;[0m                                                            &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickTahun_Bulan_TanggalJamKeluar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 memilih Jam dan Menit Jam Keluar&amp#27;[0m                                                                    &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJam_MenitKeluar()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 menekan field  Tipe Absen&amp#27;[0m                                                                           &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickFieldTipeAbsen()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 memilih WFH&amp#27;[0m                                                                                         &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickWFHButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 menekan tombol Ajukan&amp#27;[0m                                                                               &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickAjukanButton()&amp#27;[0m
+✅ Verifikasi sukses! Jumlah List Total Bertambah 103 menjadi 103
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPengguna1 akan melihat text Total akan bertambah&amp#27;[0m                                                             &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.verifyElement()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field&quot;, &quot;Pengujian Fitur Koreksi Absen di Aplikasi Hadir&quot;](9)" classname="com.aplikasihadir.runners.RunnerTest" time="10.269">
+    <system-out><![CDATA[
+@test @koreksi @medium @critical @negative
+Scenario: Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field &amp#27;[90m# src/test/resources/features/01_KoreksiAbsen.feature:35&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna2 menekan tombol Ajukan Koreksi&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.clickAjukanKoreksiButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna2 menekan tombol Ajukan&amp#27;[0m                                                      &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.clickAjukanButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPengguna2 akan melihat alert &amp#27;[0m&amp#27;[32m&amp#27;[1m"Salah satu harus diisi!"&amp#27;[0m                               &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.verifyElement(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja&quot;, &quot;Pengujian Fitur Koreksi Absen di Aplikasi Hadir&quot;](10)" classname="com.aplikasihadir.runners.RunnerTest" time="17.231">
+    <system-out><![CDATA[
+@test @koreksi @medium @critical @positive
+Scenario: Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja &amp#27;[90m# src/test/resources/features/01_KoreksiAbsen.feature:41&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna3 menekan  field Jam Masuk&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickJamMasukButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna3 memilih Tahun, Bulan, Tanggal&amp#27;[0m                                         &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickTahun_Bulan_tanggal()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna3 memilih Jam dan Menit&amp#27;[0m                                                  &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickJam_Menit()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna3 menekan tombol Ajukan&amp#27;[0m                                                  &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickAjukanButton()&amp#27;[0m
+✅ Verifikasi sukses! Jumlah List Total Bertambah 104 menjadi 104
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPengguna3 akan melihat text Total akan bertambah&amp#27;[0m                                &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.verifyElement()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna 3 keluar dari halaman koreksi absen&amp#27;[0m                                     &amp#27;[90m# com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickBackButton()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve&quot;, &quot;Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile&quot;](11)" classname="com.aplikasihadir.runners.RunnerTest" time="23.283">
+    <system-out><![CDATA[
+@test @izin @terlambat @medium @major @positive
+Scenario: Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve &amp#27;[90m# src/test/resources/features/02_IzinTerlambat.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna melakukan scroll mengarah ke menu izin&amp#27;[0m                                                                                          &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.scrollToMenuIzin()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna klik menu izin&amp#27;[0m                                                                                                                    &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickMenuIzinButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna klik tombol ajukan izin terlambat&amp#27;[0m                                                                                                &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickAjukanIzinTerlambatButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna isi field tanggal&amp#27;[0m                                                                                                                 &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickTanggalButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna isi field Jam&amp#27;[0m                                                                                                                     &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickJamButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna isi field keterangan&amp#27;[0m                                                                                                              &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.fillKeteranganTextArea()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna klik tombol ajukan&amp#27;[0m                                                                                                                &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickAjukanButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul notifikasi &amp#27;[0m&amp#27;[32m&amp#27;[1m"Permintaan izin terlambat sebelumnya belum di approve"&amp#27;[0m                                                                 &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.verifyElement(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna merefresh halaman&amp#27;[0m                                                                                                                 &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.refreshBrowser()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan pengajuan izin terlambat dengan mengosongkan semua field&quot;, &quot;Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile&quot;](12)" classname="com.aplikasihadir.runners.RunnerTest" time="4.509">
+    <system-out><![CDATA[
+@test @izin @terlambat @medium @major @negative
+Scenario: Melakukan pengajuan izin terlambat dengan mengosongkan semua field                   &amp#27;[90m# src/test/resources/features/02_IzinTerlambat.feature:16&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna1 klik tombol ajukan izin terlambat&amp#27;[0m                                            &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.clickTombolAjukanIzinTerlambat()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna1 klik tombol ajukan&amp#27;[0m                                                            &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.clickTombolAjukan()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul notifikasi &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tanggal Harus diisi!"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Jam Harus diisi!"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Keterangan Harus diisi!"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.verifyElementText(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 merefresh halaman&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.refreshBrowser()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid&quot;, &quot;Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile&quot;](13)" classname="com.aplikasihadir.runners.RunnerTest" time="13.143">
+    <system-out><![CDATA[
+@test @izin @pulangCepat @medium @major @positive
+Scenario: Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid &amp#27;[90m# src/test/resources/features/03_IzinPulangCepat.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna1 klik tombol pulang cepat dihalaman izin&amp#27;[0m                                         &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickMenuPulangCepatButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna1 klik tombol ajukan izin pulang cepat&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickAjukanIzinPulangCepatButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 isi field tanggal&amp#27;[0m                                                                 &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickTanggalPulangCepatButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 isi field Jam&amp#27;[0m                                                                     &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickJamPulangCepatButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 isi field keterangan&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.fillKeteranganPulangCepat()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mKlik tombol ajukan&amp#27;[0m                                                                          &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickTombolAjukanPulangCepat()&amp#27;[0m
+✅ Verifikasi sukses! Jumlah List Total Bertambah 49 menjadi 49
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mText Total akan bertambah&amp#27;[0m                                                                  &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.verifyElement()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field&quot;, &quot;Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile&quot;](14)" classname="com.aplikasihadir.runners.RunnerTest" time="3.459">
+    <system-out><![CDATA[
+@test @izin @pulangCepat @medium @major @negative
+Scenario: Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field                 &amp#27;[90m# src/test/resources/features/03_IzinPulangCepat.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna2 klik tombol ajukan izin pulang cepat&amp#27;[0m                                          &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.clickAjukanIzinPulangCepat()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna2 klik tombol ajukan&amp#27;[0m                                                             &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.clickAnjukanPulangCepatButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul pesan error &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tanggal Harus diisi!"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Jam Harus diisi!"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Keterangan Harus diisi!"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.verifyElementText(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna2 merefresh halaman&amp#27;[0m                                                               &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.refresh()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve&quot;, &quot;Pengujian Fitur Izin Off di Aplikasi Hadir Mobile&quot;](15)" classname="com.aplikasihadir.runners.RunnerTest" time="11.955">
+    <system-out><![CDATA[
+@test @izin @off @medium @critical @positive
+Scenario: Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve &amp#27;[90m# src/test/resources/features/04_IzinOff.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna klik tombol izin off dihalaman izin&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickMenuIzinOffButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna klik tombol ajukan izin off&amp#27;[0m                                                                       &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickAjukanIzinOffButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna mengisi tanggal izin off&amp#27;[0m                                                                           &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickTanggalIzinOffButton()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna mengisi field alasan off&amp#27;[0m                                                                           &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.fillAlasanOffTxtArea()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mKlik tombol ajukan setelah mengisi semua field&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickAjukanButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mAkan muncul alert &amp#27;[0m&amp#27;[32m&amp#27;[1m"Permintaan dalam proses"&amp#27;[0m                                                                &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.verifyElementTextIzinOff(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna merefresh halaman izin off&amp#27;[0m                                                                         &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.refresh()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Melakukan pengajuan izin Off dengan mengosongkan semua field&quot;, &quot;Pengujian Fitur Izin Off di Aplikasi Hadir Mobile&quot;](16)" classname="com.aplikasihadir.runners.RunnerTest" time="5.438">
+    <system-out><![CDATA[
+@test @izin @off @medium @critical @negative
+Scenario: Melakukan pengajuan izin Off dengan mengosongkan semua field             &amp#27;[90m# src/test/resources/features/04_IzinOff.feature:14&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna1 menekan tombol ajukan izin off&amp#27;[0m                                   &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.clickAjukanIzinOffButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna1 langsung menekan tombol ajukan&amp#27;[0m                                    &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.clickAjukanButton()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul pesan error &amp#27;[0m&amp#27;[32m&amp#27;[1m"Pilih tanggal off!."&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Alasan dan mengambill izin off."&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.verifyElementText(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna1 merefresh halaman izin off&amp#27;[0m                                         &amp#27;[90m# com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.refresh()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Menguji Upload File dalam Import Status&quot;, &quot;Pengujian Fitur Aplikasi Hadir&quot;](17)" classname="com.aplikasihadir.runners.RunnerTest" time="11.847">
+    <system-out><![CDATA[
+@Import
+Scenario: Menguji Upload File dalam Import Status                                                 &amp#27;[90m# src/test/resources/features/05_ImportStatus.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna login ke website Hadir dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatus.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan tombol menu Import di bagian kiri menu&amp#27;[0m                                     &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatus.clickMenuImport()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan tombol submenu Import Status Aktif&amp#27;[0m                                         &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatus.clickSubMenuStatusAktif()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna menekan tombol choose file dan memilih file excel yang diinginkan&amp#27;[0m                 &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatus.clickBtnChooseFile()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan tombol import&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatus.clickBtnImport()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul sebuah notifikasi &amp#27;[0m&amp#27;[32m&amp#27;[1m"Berhasil import excel"&amp#27;[0m                                           &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatus.verifyImportExcel(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Menguji Upload File dalam Import Status (Selain Excel)&quot;, &quot;Pengujian Fitur Aplikasi Hadir&quot;](18)" classname="com.aplikasihadir.runners.RunnerTest" time="6.284">
+    <system-out><![CDATA[
+@Import
+Scenario: Menguji Upload File dalam Import Status (Selain Excel)                 &amp#27;[90m# src/test/resources/features/05_ImportStatus.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna menekan tombol choose file dan memilih file bukan excel&amp#27;[0m         &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.importFileBukanExcel()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan tombol import lagi&amp#27;[0m                                        &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.clickBtnImport()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul notifikasi error &amp#27;[0m&amp#27;[32m&amp#27;[1m"*File harus berupa file Excel (.xls atau .xlsx)"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.verifyImportFile(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Mendownload File Template Untuk Data Import&quot;, &quot;Pengujian Fitur Aplikasi Hadir&quot;](19)" classname="com.aplikasihadir.runners.RunnerTest" time="1.124">
+    <system-out><![CDATA[
+@Import
+Scenario: Mendownload File Template Untuk Data Import &amp#27;[90m# src/test/resources/features/05_ImportStatus.feature:19&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna menekan tombol download template&amp#27;[0m     &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusDownloadTemplate.clickBtnDownloadTemplate()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPengguna berhasil mendownload file template&amp#27;[0m    &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusDownloadTemplate.verifyDownloadTemplate()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Menguji Upload File Excel Kosongan dalam Import Status&quot;, &quot;Pengujian Fitur Aplikasi Hadir&quot;](20)" classname="com.aplikasihadir.runners.RunnerTest" time="7.353">
+    <system-out><![CDATA[
+@Import
+Scenario: Menguji Upload File Excel Kosongan dalam Import Status            &amp#27;[90m# src/test/resources/features/05_ImportStatus.feature:24&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna2 menekan tombol menu Import di bagian kiri menu&amp#27;[0m            &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickMenuImport()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna2 menekan tombol submenu Import Status Aktif&amp#27;[0m                  &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickSubMenuStatusAktif()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna2 menekan tombol choose file dan memilih file excel kosongan&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickBtnChooseFile()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna2 menekan tombol import&amp#27;[0m                                       &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickBtnImport()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mMuncul alert &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m                                                      &amp#27;[90m# com.aplikasihadir.steps.importStatus.ImportStatusKosongan.verifyImportExcel(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan departement baru&quot;, &quot;Tambah Departements Setting&quot;](21)" classname="com.aplikasihadir.runners.RunnerTest" time="13.162">
+    <system-out><![CDATA[
+@positive @unitSetting
+Scenario: Admin menambahkan departement baru                                   &amp#27;[90m# src/test/resources/features/06_TambahDepartementsSetting.feature:10&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna memasukkan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin tekan menu management&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik sub menu unit setting&amp#27;[0m                                         &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin tekan tombol tambahkan&amp#27;[0m                                            &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin memilih pilihan Credit Card&amp#27;[0m                                        &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin tekan tombol tambah&amp#27;[0m                                                &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step05()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUnit setting berhasil ditambahkan&amp#27;[0m                                       &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan departement baru dengan data kosong&quot;, &quot;Tambah Departements Setting Data Kosong&quot;](22)" classname="com.aplikasihadir.runners.RunnerTest" time="14.989">
+    <system-out><![CDATA[
+@negative @unitSetting
+Scenario: Admin menambahkan departement baru dengan data kosong                  &amp#27;[90m# src/test/resources/features/07_TambahDepartementSettingDataKosong.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mPengguna login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mklik menu management&amp#27;[0m                                                       &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin tekan sub menu unit setting&amp#27;[0m                                          &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin klik tombol tambahkan&amp#27;[0m                                               &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin mengisi dengan data kosong&amp#27;[0m                                           &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik tombol tambah&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step05()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUnit setting gagal ditambahkan&amp#27;[0m                                            &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan departement baru dengan data duplikat&quot;, &quot;Tambah Departements Setting Data Duplikat&quot;](23)" classname="com.aplikasihadir.runners.RunnerTest" time="13.127">
+    <system-out><![CDATA[
+@negative @unitSetting
+Scenario: Admin menambahkan departement baru dengan data duplikat       &amp#27;[90m# src/test/resources/features/08_TambahDepartementSettingDataDuplikat.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mlogin dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan menu management&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan sub menu unit setting&amp#27;[0m                                       &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mklik tombol tambahkan&amp#27;[0m                                            &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mpilih pilihan Credit Card&amp#27;[0m                                         &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mklik tombol tambah&amp#27;[0m                                                &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step05()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mgagal ditambahkan&amp#27;[0m                                                &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan departement baru&quot;, &quot;Tambah Departements Setting&quot;](24)" classname="com.aplikasihadir.runners.RunnerTest" time="8.777">
+    <system-out><![CDATA[
+@positive @unitSetting
+Scenario: Admin menambahkan departement baru                                      &amp#27;[90m# src/test/resources/features/09_HapusDepartementSetting.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna3 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan menu management.&amp#27;[0m                                                      &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mklik sub menu unit setting&amp#27;[0m                                                  &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin tekan tombol hapus pada data yang akan dihapus&amp#27;[0m                       &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step03()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUnit setting berhasil dihapus&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan posisi baru&quot;, &quot;Tambah Posisi&quot;](25)" classname="com.aplikasihadir.runners.RunnerTest" time="27.248">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id = &apos;name&apos; and @name = &apos;name&apos; and @placeholder = &apos;Nama Position&apos; and @type = &apos;text&apos;]&quot;}&#10;  (Session info: chrome=133.0.6943.142)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = &apos;name&apos; and @name = &apos;name&apos; and @placeholder = &apos;Nama Position&apos; and @type = &apos;text&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at ✽.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+]]></failure>
+    <system-out><![CDATA[
+@positive @posisi
+Scenario: Admin menambahkan posisi baru                                           &amp#27;[90m# src/test/resources/features/10_TambahPosisi.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna4 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik menu management&amp#27;[0m                                                  &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik sub menu posisi&amp#27;[0m                                                  &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin menekan tombol tambahkan&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin mengisi posisi Admin 1&amp#27;[0m                                                &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin memilih pilihan departement Credit Card&amp#27;[0m                               &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step05()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin menekan tombol tambah&amp#27;[0m                                                 &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step06()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mPosisi berhasil ditambahkan&amp#27;[0m                                                &amp#27;[90m# com.aplikasihadir.steps.posisi.posisidefinition.step07()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at âœ½.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan posisi baru&quot;, &quot;Tambah Posisi&quot;](26)" classname="com.aplikasihadir.runners.RunnerTest" time="16.13">
+    <system-out><![CDATA[
+@negative @posisi
+Scenario: Admin menambahkan posisi baru                                           &amp#27;[90m# src/test/resources/features/11_TambahPosisiNamaPosisiKosong.feature:3&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna5 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mklik menu management.&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin tekan sub menu posisi&amp#27;[0m                                                 &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mtekan tombol tambahkan&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin pilih pilihan departement Credit Card&amp#27;[0m                                 &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan tombol tambah&amp#27;[0m                                                         &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step05()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPosisi gagal ditambahkan&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan posisi baru&quot;, &quot;Tambah Posisi departemen kosong&quot;](27)" classname="com.aplikasihadir.runners.RunnerTest" time="15.038">
+    <system-out><![CDATA[
+@negative @posisi
+Scenario: Admin menambahkan posisi baru                                           &amp#27;[90m# src/test/resources/features/12_TambahPosisiNamaDepartementKosong.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna6 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mpengguna tekan menu management&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan sub menu posisi&amp#27;[0m                                                       &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mmenekan tombol tambahkan&amp#27;[0m                                                   &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mmengisi posisi Admin 1&amp#27;[0m                                                      &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mmenekan tombol tambah&amp#27;[0m                                                       &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step05()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mData gagal ditambahkan&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan posisi baru&quot;, &quot;Tambah Posisi&quot;](28)" classname="com.aplikasihadir.runners.RunnerTest" time="13.934">
+    <system-out><![CDATA[
+@negative @posisi
+Scenario: Admin menambahkan posisi baru                                           &amp#27;[90m# src/test/resources/features/13_TambahPosisiNamaPosisiDanDepartementKosong.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna7 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mpengguna klik menu management&amp#27;[0m                                               &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mpengguna tekan sub menu posisi&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mpengguna menekan tombol tambahkan&amp#27;[0m                                          &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mpengguna menekan tombol tambah&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step04()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mpengguna gagal menambahkan data&amp#27;[0m                                            &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step05()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin menambahkan posisi baru&quot;, &quot;Tambah Posisi&quot;](29)" classname="com.aplikasihadir.runners.RunnerTest" time="27.272">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id = &apos;name&apos; and @name = &apos;name&apos; and @placeholder = &apos;Nama Position&apos; and @type = &apos;text&apos;]&quot;}&#10;  (Session info: chrome=133.0.6943.142)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = &apos;name&apos; and @name = &apos;name&apos; and @placeholder = &apos;Nama Position&apos; and @type = &apos;text&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07(posisiDataDuplikatdefinition.java:69)
+	at ✽.Pengguna gagal menambahkan data(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/14_TambahPosisiDataDuplikat.feature:12)
+]]></failure>
+    <system-out><![CDATA[
+@negative @posisi
+Scenario: Admin menambahkan posisi baru                                           &amp#27;[90m# src/test/resources/features/14_TambahPosisiDataDuplikat.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna8 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna klik menu management&amp#27;[0m                                               &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna klik sub menu posisi&amp#27;[0m                                               &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mPengguna menekan tombol tambahkan&amp#27;[0m                                          &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna mengisi posisi Admin 1&amp#27;[0m                                             &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna memilih pilihan departement Credit Card&amp#27;[0m                            &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step05()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna menekan tombol tambah&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step06()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mPengguna gagal menambahkan data&amp#27;[0m                                            &amp#27;[90m# com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07(posisiDataDuplikatdefinition.java:69)
+	at âœ½.Pengguna gagal menambahkan data(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/14_TambahPosisiDataDuplikat.feature:12)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin mengedit posisi&quot;, &quot;Tambah Posisi&quot;](30)" classname="com.aplikasihadir.runners.RunnerTest" time="39.254">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[(text() = &apos;Admin 2&apos; or . = &apos;Admin 2&apos;)]&quot;}&#10;  (Session info: chrome=133.0.6943.142)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//h6[(text() = &apos;Admin 2&apos; or . = &apos;Admin 2&apos;)]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h6[(text() = 'Admin 2' or . = 'Admin 2')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//h6[(text() = 'Admin 2' or . = 'Admin 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.aplikasihadir.pages.editposisipage.verify(editposisipage.java:94)
+	at com.aplikasihadir.steps.posisi.editposisidefinition.step07(editposisidefinition.java:62)
+	at ✽.List yang diperbaharui menjadi "Admin 2"(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/15_EditPosisi.feature:12)
+]]></failure>
+    <system-out><![CDATA[
+@positive @posisi
+Scenario: Admin mengedit posisi                                                   &amp#27;[90m# src/test/resources/features/15_EditPosisi.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna9 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan menu management&amp#27;[0m                                                       &amp#27;[90m# com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna tekan sub menu posisi&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin klik titik tiga pada posisi yang akan diedit&amp#27;[0m                         &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik edit&amp#27;[0m                                                             &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin mengedit Admin 1 menjadi Admin 2&amp#27;[0m                                      &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.step05()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin menekan tombol simpan&amp#27;[0m                                                 &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.step06()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mList yang diperbaharui menjadi &amp#27;[0m&amp#27;[31m&amp#27;[1m"Admin 2"&amp#27;[0m                                   &amp#27;[90m# com.aplikasihadir.steps.posisi.editposisidefinition.step07(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[(text() = 'Admin 2' or . = 'Admin 2')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//h6[(text() = 'Admin 2' or . = 'Admin 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.aplikasihadir.pages.editposisipage.verify(editposisipage.java:94)
+	at com.aplikasihadir.steps.posisi.editposisidefinition.step07(editposisidefinition.java:62)
+	at âœ½.List yang diperbaharui menjadi "Admin 2"(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/15_EditPosisi.feature:12)
+&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin mengedit posisi&quot;, &quot;Tambah Posisi&quot;](31)" classname="com.aplikasihadir.runners.RunnerTest" time="18.229">
+    <system-out><![CDATA[
+@negative @posisi
+Scenario: Admin mengedit posisi                                                    &amp#27;[90m# src/test/resources/features/16_EditPosisiNamaPosisiKosong.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna10 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mklik menu management!&amp#27;[0m                                                        &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna klik sub menu posisi.&amp#27;[0m                                               &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin tekan titik tiga pada posisi yang akan diedit&amp#27;[0m                         &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin tekan edit&amp#27;[0m                                                             &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin mengosongkan nama posisi&amp#27;[0m                                               &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step05()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik tombol simpan&amp#27;[0m                                                     &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step06()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mPosisi gagal diedit&amp#27;[0m                                                         &amp#27;[90m# com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step07()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin hapus posisi&quot;, &quot;Tambah Posisi&quot;](32)" classname="com.aplikasihadir.runners.RunnerTest" time="23.063">
+    <system-out><![CDATA[
+@positive @posisi
+Scenario: Admin hapus posisi                                                       &amp#27;[90m# src/test/resources/features/17_HapusPosisi.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna11 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mtekan menu management,&amp#27;[0m                                                       &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna tekan sub menu posisi,&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin klik titik tiga pada posisi yang akan dihapus,&amp#27;[0m                        &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik hapus&amp#27;[0m                                                             &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.step04()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin klik tombol ya&amp#27;[0m                                                         &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.step05()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mData terhapus&amp#27;[0m                                                               &amp#27;[90m# com.aplikasihadir.steps.posisi.hapusposisidefinition.step06()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Admin hapus posisi&quot;, &quot;Tambah Posisi&quot;](33)" classname="com.aplikasihadir.runners.RunnerTest" time="13.864">
+    <system-out><![CDATA[
+@positive @posisi
+Scenario: Admin hapus posisi                                                       &amp#27;[90m# src/test/resources/features/18_SearchPosisi.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mpengguna12 login dengan email &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir.com"&amp#27;[0m&amp#27;[32m dan password &amp#27;[0m&amp#27;[32m&amp#27;[1m"admin@hadir"&amp#27;[0m &amp#27;[90m# com.aplikasihadir.steps.posisi.cariposisidefinition.loginHadir(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mAdmin tekan menu management,&amp#27;[0m                                                 &amp#27;[90m# com.aplikasihadir.steps.posisi.cariposisidefinition.step01()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mPengguna tekan sub menu posisi.&amp#27;[0m                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.cariposisidefinition.step02()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mKetik nama Admin 2&amp#27;[0m                                                          &amp#27;[90m# com.aplikasihadir.steps.posisi.cariposisidefinition.step03()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mKlik tombol search&amp#27;[0m                                                           &amp#27;[90m# com.aplikasihadir.steps.posisi.cariposisidefinition.step04()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mData Ditemukan&amp#27;[0m                                                              &amp#27;[90m# com.aplikasihadir.steps.posisi.cariposisidefinition.step05()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="33" passed="30" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-03T18:23:01 WIB" name="Suite TestNG x Selenium" finished-at="2025-03-03T18:35:33 WIB" duration-ms="752142">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-03-03T18:23:01 WIB" name="Test Hadir User" finished-at="2025-03-03T18:35:33 WIB" duration-ms="752142">
+      <class name="com.aplikasihadir.runners.RunnerTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:23:01 WIB" name="setUpClass" finished-at="2025-03-03T18:23:06 WIB" duration-ms="4914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@674d2b8b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:23:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:24:13 WIB" duration-ms="67125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Absensi masuk dan keluar dan keluar dalam satu hari"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Absen Masuk dan Keluar"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:24:13 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:25:23 WIB" duration-ms="69982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Absensi masuk dan keluar dan keluar dalam satu hari"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Absen Masuk dan Keluar"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:25:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:26:29 WIB" duration-ms="65979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Absensi masuk dan keluar dan keluar dalam satu hari"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Absen Masuk dan Keluar"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:26:29 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:27:39 WIB" duration-ms="69977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Absensi masuk dan keluar dan keluar dalam satu hari"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Absen Masuk dan Keluar"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:27:39 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:27:55 WIB" duration-ms="15517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Absen Masuk dan Keluar"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:27:55 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:28:07 WIB" duration-ms="12070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Absen Masuk dan Keluar"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:28:07 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:28:52 WIB" duration-ms="44850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Koreksi Absen di Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:28:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:29:29 WIB" duration-ms="37120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Koreksi Absen di Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:29:29 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:29:39 WIB" duration-ms="10270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Koreksi Absen di Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:29:39 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:29:56 WIB" duration-ms="17230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Koreksi Absen di Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:29:56 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:30:20 WIB" duration-ms="23283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:30:20 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:30:24 WIB" duration-ms="4509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan pengajuan izin terlambat dengan mengosongkan semua field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:30:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:30:37 WIB" duration-ms="13142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:30:37 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:30:41 WIB" duration-ms="3459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:30:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:30:53 WIB" duration-ms="11955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Izin Off di Aplikasi Hadir Mobile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:30:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:30:58 WIB" duration-ms="5439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Melakukan pengajuan izin Off dengan mengosongkan semua field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Izin Off di Aplikasi Hadir Mobile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:30:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:31:10 WIB" duration-ms="11847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Menguji Upload File dalam Import Status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:31:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:31:16 WIB" duration-ms="6284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Menguji Upload File dalam Import Status (Selain Excel)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:31:16 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:31:17 WIB" duration-ms="1125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Mendownload File Template Untuk Data Import"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:31:17 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:31:25 WIB" duration-ms="7354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Menguji Upload File Excel Kosongan dalam Import Status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Pengujian Fitur Aplikasi Hadir"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:31:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:31:38 WIB" duration-ms="13163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan departement baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Departements Setting"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:31:38 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:31:53 WIB" duration-ms="14989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan departement baru dengan data kosong"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Departements Setting Data Kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:31:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:32:06 WIB" duration-ms="13127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan departement baru dengan data duplikat"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Departements Setting Data Duplikat"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:32:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:32:15 WIB" duration-ms="8776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan departement baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Departements Setting"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:32:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:32:42 WIB" duration-ms="27243" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan posisi baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+at ✽.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:32:42 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:32:58 WIB" duration-ms="16130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan posisi baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:32:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:33:13 WIB" duration-ms="15038" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan posisi baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi departemen kosong"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:33:13 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:33:27 WIB" duration-ms="13934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan posisi baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:33:27 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:33:54 WIB" duration-ms="27270" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin menambahkan posisi baru"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07(posisiDataDuplikatdefinition.java:69)
+at ✽.Pengguna gagal menambahkan data(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/14_TambahPosisiDataDuplikat.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:33:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:34:34 WIB" duration-ms="39254" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin mengedit posisi"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h6[(text() = 'Admin 2' or . = 'Admin 2')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//h6[(text() = 'Admin 2' or . = 'Admin 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[(text() = 'Admin 2' or . = 'Admin 2')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b3f5d7c3a7aa9c8129c7a9b7d0ec408, findElement {using=xpath, value=//h6[(text() = 'Admin 2' or . = 'Admin 2')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51764/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b3f5d7c3a7aa9c8129c7a9b7d0ec408
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+at com.aplikasihadir.pages.editposisipage.verify(editposisipage.java:94)
+at com.aplikasihadir.steps.posisi.editposisidefinition.step07(editposisidefinition.java:62)
+at ✽.List yang diperbaharui menjadi "Admin 2"(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/15_EditPosisi.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:34:34 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:34:52 WIB" duration-ms="18231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin mengedit posisi"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:34:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:35:15 WIB" duration-ms="23063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin hapus posisi"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:35:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-03T18:35:29 WIB" duration-ms="13864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Admin hapus posisi"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tambah Posisi"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.aplikasihadir.runners.RunnerTest@7b2bbc3]" started-at="2025-03-03T18:35:29 WIB" name="tearDownClass" finished-at="2025-03-03T18:35:33 WIB" duration-ms="4536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.aplikasihadir.runners.RunnerTest -->
+    </test> <!-- Test Hadir User -->
+  </suite> <!-- Suite TestNG x Selenium -->
+</testng-results>

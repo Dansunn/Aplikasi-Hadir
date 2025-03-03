@@ -1,0 +1,3952 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 3, 2025 03:26:47 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@pulangCepat</a><a class="dropdown-item" href="#">@medium</a><a class="dropdown-item" href="#">@posisi</a><a class="dropdown-item" href="#">@negative</a><a class="dropdown-item" href="#">@major</a><a class="dropdown-item" href="#">@terlambat</a><a class="dropdown-item" href="#">@test</a><a class="dropdown-item" href="#">@off</a><a class="dropdown-item" href="#">@koreksi</a><a class="dropdown-item" href="#">@unitSetting</a><a class="dropdown-item" href="#">@positive</a><a class="dropdown-item" href="#">@Import</a><a class="dropdown-item" href="#">@izin</a><a class="dropdown-item" href="#">@Negative</a><a class="dropdown-item" href="#">@critical</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Absen Masuk dan Keluar</p>
+            <p class="text-sm">
+              <span>3:26:50 PM</span> / <span>00:05:03:702</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Absen Masuk dan Keluar</h5>
+<span class='badge badge-success'>03.03.2025 3:26:50 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:31:53 PM</span>
+<span class='badge badge-default'>00:05:03:702</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User melakukan login dengan "hadirsqa45@gmail.com" dan "SQA@Hadir12345"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Kamera</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi form absen masuk dengan "Work From Home" dan "Hadir"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk untuk submit absen</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menekan tombol keluar pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi "" pada bagian notes pulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User kembali menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User tidak lagi melihat tombol keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User melakukan logout</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User melakukan login dengan "hadirsqa44@gmail.com" dan "SQA@Hadir12345"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Kamera</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi form absen masuk dengan "Work From Home" dan ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk untuk submit absen</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menekan tombol keluar pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi "Balik" pada bagian notes pulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User kembali menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User tidak lagi melihat tombol keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User melakukan logout</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User melakukan login dengan "hadirsqa43@gmail.com" dan "SQA@Hadir12345"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Kamera</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi form absen masuk dengan "Work From Office" dan "Hadir"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk untuk submit absen</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menekan tombol keluar pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi "" pada bagian notes pulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User kembali menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User tidak lagi melihat tombol keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User melakukan logout</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Absensi masuk dan keluar dan keluar dalam satu hari</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User melakukan login dengan "hadirsqa42@gmail.com" dan "SQA@Hadir12345"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Kamera</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi form absen masuk dengan "Work From Office" dan ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Masuk untuk submit absen</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User melihat tanggal "Senin, 03 March 2025" pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User menekan tombol keluar pada history absensi</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User mengisi "Balik" pada bagian notes pulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User klik tombol Absen Keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User kembali menunggu halaman selesai dimuat ulang</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User tidak lagi melihat tombol keluar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User melakukan logout</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.Absen.AbsenMasukDouble.login(java.lang.String,java.lang.String)">
+                <span>Given User melakukan login dengan email "hadirsqa16@gmail.com" dan password "SQA@Hadir12345"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.Absen.AbsenMasukDouble.verifyBtnAbsenMasuk()">
+                <span>Then User mencoba mencari tombol masuk dan tombol masuk sudah tidak ada</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.Absen.AbsenKeluarDouble.ScrollToKeluar()">
+                <span>Given User mencoba mencari tombol keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.Absen.AbsenKeluarDouble.verifyTombolKeluar()">
+                <span>Then Ternyata tombol keluar sudah tidak ada</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="65"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Pengujian Fitur Koreksi Absen di Aplikasi Hadir</p>
+            <p class="text-sm">
+              <span>3:31:53 PM</span> / <span>00:01:49:445</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Pengujian Fitur Koreksi Absen di Aplikasi Hadir</h5>
+<span class='badge badge-success'>03.03.2025 3:31:53 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:33:43 PM</span>
+<span class='badge badge-default'>00:01:49:445</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=65</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.doLogin(java.lang.String,java.lang.String)">
+                <span>Given Pengguna Login menggunakan email "tejo@gmail.com" dan password "tejo@123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.scrollToMenuKoreksiAbsen()">
+                <span>And Pengguna melakukan scroll mengarah ke menu koreksi absen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickMenuKoreksiAbsen()">
+                <span>And Pengguna menekan menu Koreksi Absen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickAjukanKoreksiButton()">
+                <span>When Pengguna menekan tombol Ajukan Koreksi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJamMasukButton()">
+                <span>And Pengguna menekan  field Jam Masuk</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickTahun_Bulan_tanggal()">
+                <span>And Pengguna memilih Tahun, Bulan, Tanggal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJam_Menit()">
+                <span>And Pengguna memilih Jam dan Menit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickFieldJamKeluar()">
+                <span>And Pengguna memilih field Jam Keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickTahun_Bulan_TanggalJamKeluar()">
+                <span>And Pengguna memilih Tahun, Bulan, Tanggal Jam Keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickJam_MenitKeluar()">
+                <span>And Pengguna memilih Jam dan Menit Jam Keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickFieldTipeAbsen()">
+                <span>And Pengguna menekan field  Tipe Absen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickWFHButton()">
+                <span>And Pengguna memilih WFO</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.clickAjukanButton()">
+                <span>And Pengguna menekan tombol Ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFODefinition.verifyElement()">
+                <span>Then Pengguna akan melihat text Total akan bertambah</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickAjukanKoreksiButton()">
+                <span>Given Pengguna1 menekan tombol Ajukan Koreksi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJamMasukButton()">
+                <span>When Pengguna1 menekan  field Jam Masuk</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickTahun_Bulan_tanggal()">
+                <span>And Pengguna1 memilih Tahun, Bulan, Tanggal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJam_Menit()">
+                <span>And Pengguna1 memilih Jam dan Menit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickFieldJamKeluar()">
+                <span>And Pengguna1 memilih field Jam Keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickTahun_Bulan_TanggalJamKeluar()">
+                <span>And Pengguna1 memilih Tahun, Bulan, Tanggal Jam Keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickJam_MenitKeluar()">
+                <span>And Pengguna1 memilih Jam dan Menit Jam Keluar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickFieldTipeAbsen()">
+                <span>And Pengguna1 menekan field  Tipe Absen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickWFHButton()">
+                <span>And Pengguna1 memilih WFH</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.clickAjukanButton()">
+                <span>And Pengguna1 menekan tombol Ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestWFHDefinition.verifyElement()">
+                <span>Then Pengguna1 akan melihat text Total akan bertambah</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.clickAjukanKoreksiButton()">
+                <span>Given Pengguna2 menekan tombol Ajukan Koreksi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.clickAjukanButton()">
+                <span>When Pengguna2 menekan tombol Ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPageNegativeTestNoInputDefinition.verifyElement(java.lang.String)">
+                <span>Then Pengguna2 akan melihat alert "Salah satu harus diisi!"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="97"><span class="badge log pass-bg mr-2">Pass</span>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickJamMasukButton()">
+                <span>Given Pengguna3 menekan  field Jam Masuk</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickTahun_Bulan_tanggal()">
+                <span>When Pengguna3 memilih Tahun, Bulan, Tanggal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickJam_Menit()">
+                <span>And Pengguna3 memilih Jam dan Menit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickAjukanButton()">
+                <span>And Pengguna3 menekan tombol Ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.verifyElement()">
+                <span>Then Pengguna3 akan melihat text Total akan bertambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.KoreksiAbsenDefinition.KoreksiAbsenPagePositiveTestOnlyJamMasukDefinition.clickBackButton()">
+                <span>And Pengguna 3 keluar dari halaman koreksi absen</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="104"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile</p>
+            <p class="text-sm">
+              <span>3:33:43 PM</span> / <span>00:00:27:748</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile</h5>
+<span class='badge badge-success'>03.03.2025 3:33:43 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:34:11 PM</span>
+<span class='badge badge-default'>00:00:27:748</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=104</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="105"><span class="badge log pass-bg mr-2">Pass</span>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.scrollToMenuIzin()">
+                <span>Given Pengguna melakukan scroll mengarah ke menu izin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickMenuIzinButton()">
+                <span>And Pengguna klik menu izin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickAjukanIzinTerlambatButton()">
+                <span>When Pengguna klik tombol ajukan izin terlambat</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickTanggalButton()">
+                <span>And Pengguna isi field tanggal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickJamButton()">
+                <span>And Pengguna isi field Jam</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.fillKeteranganTextArea()">
+                <span>And Pengguna isi field keterangan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.clickAjukanButton()">
+                <span>And Pengguna klik tombol ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.verifyElement(java.lang.String)">
+                <span>Then Muncul notifikasi "Permintaan izin terlambat sebelumnya belum di approve"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPagePositiveTest.refreshBrowser()">
+                <span>And Pengguna merefresh halaman</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.clickTombolAjukanIzinTerlambat()">
+                <span>Given Pengguna1 klik tombol ajukan izin terlambat</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.clickTombolAjukan()">
+                <span>When Pengguna1 klik tombol ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.verifyElementText(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then Muncul notifikasi "Tanggal Harus diisi!", "Jam Harus diisi!", "Keterangan Harus diisi!"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.TerlambatDefinition.IzinTerlambatPageNegativeTest.refreshBrowser()">
+                <span>And Pengguna1 merefresh halaman</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="120"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile</p>
+            <p class="text-sm">
+              <span>3:34:11 PM</span> / <span>00:00:16:600</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile</h5>
+<span class='badge badge-success'>03.03.2025 3:34:11 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:34:27 PM</span>
+<span class='badge badge-default'>00:00:16:600</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=120</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="121"><span class="badge log pass-bg mr-2">Pass</span>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickMenuPulangCepatButton()">
+                <span>Given Pengguna1 klik tombol pulang cepat dihalaman izin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickAjukanIzinPulangCepatButton()">
+                <span>When Pengguna1 klik tombol ajukan izin pulang cepat</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickTanggalPulangCepatButton()">
+                <span>And Pengguna1 isi field tanggal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickJamPulangCepatButton()">
+                <span>And Pengguna1 isi field Jam</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.fillKeteranganPulangCepat()">
+                <span>And Pengguna1 isi field keterangan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.clickTombolAjukanPulangCepat()">
+                <span>And Klik tombol ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPagePositiveTest.verifyElement()">
+                <span>Then Text Total akan bertambah</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="129"><span class="badge log pass-bg mr-2">Pass</span>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.clickAjukanIzinPulangCepat()">
+                <span>Given Pengguna2 klik tombol ajukan izin pulang cepat</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.clickAnjukanPulangCepatButton()">
+                <span>When Pengguna2 klik tombol ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.verifyElementText(java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then Muncul pesan error "Tanggal Harus diisi!", "Jam Harus diisi!", "Keterangan Harus diisi!"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.PulangCepatDefinition.IzinPulangCepatPageNegativeTest.refresh()">
+                <span>And Pengguna2 merefresh halaman</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="134"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile</p>
+            <p class="text-sm">
+              <span>3:34:27 PM</span> / <span>00:00:17:434</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile</h5>
+<span class='badge badge-success'>03.03.2025 3:34:27 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:34:45 PM</span>
+<span class='badge badge-default'>00:00:17:434</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=134</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="135"><span class="badge log pass-bg mr-2">Pass</span>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickMenuIzinOffButton()">
+                <span>Given Pengguna klik tombol izin off dihalaman izin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickAjukanIzinOffButton()">
+                <span>When Pengguna klik tombol ajukan izin off</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickTanggalIzinOffButton()">
+                <span>And Pengguna mengisi tanggal izin off</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.fillAlasanOffTxtArea()">
+                <span>And Pengguna mengisi field alasan off</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.clickAjukanButton()">
+                <span>And Klik tombol ajukan setelah mengisi semua field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.verifyElementTextIzinOff(java.lang.String)">
+                <span>Then Akan muncul alert "Permintaan dalam proses"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPagePositiveTest.refresh()">
+                <span>And Pengguna merefresh halaman izin off</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="143"><span class="badge log pass-bg mr-2">Pass</span>Melakukan pengajuan izin Off dengan mengosongkan semua field</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.clickAjukanIzinOffButton()">
+                <span>Given Pengguna1 menekan tombol ajukan izin off</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.clickAjukanButton()">
+                <span>When Pengguna1 langsung menekan tombol ajukan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.verifyElementText(java.lang.String,java.lang.String)">
+                <span>Then Muncul pesan error "Pilih tanggal off!.", "Alasan dan mengambill izin off."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.IzinDefinition.OffDefinition.IzinOffPageNegativeTest.refresh()">
+                <span>And Pengguna1 merefresh halaman izin off</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="148"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Pengujian Fitur Aplikasi Hadir</p>
+            <p class="text-sm">
+              <span>3:34:45 PM</span> / <span>00:00:26:589</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Pengujian Fitur Aplikasi Hadir</h5>
+<span class='badge badge-success'>03.03.2025 3:34:45 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:35:11 PM</span>
+<span class='badge badge-default'>00:00:26:589</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=148</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="149"><span class="badge log pass-bg mr-2">Pass</span>Menguji Upload File dalam Import Status</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatus.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given Pengguna login ke website Hadir dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatus.clickMenuImport()">
+                <span>And Pengguna menekan tombol menu Import di bagian kiri menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatus.clickSubMenuStatusAktif()">
+                <span>And Pengguna menekan tombol submenu Import Status Aktif</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatus.clickBtnChooseFile()">
+                <span>When Pengguna menekan tombol choose file dan memilih file excel yang diinginkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatus.clickBtnImport()">
+                <span>And Pengguna menekan tombol import</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatus.verifyImportExcel(java.lang.String)">
+                <span>Then Muncul sebuah notifikasi "Berhasil import excel"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="156"><span class="badge log pass-bg mr-2">Pass</span>Menguji Upload File dalam Import Status (Selain Excel)</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.importFileBukanExcel()">
+                <span>Given Pengguna menekan tombol choose file dan memilih file bukan excel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.clickBtnImport()">
+                <span>And Pengguna menekan tombol import lagi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusSelainExcel.verifyImportFile(java.lang.String)">
+                <span>Then Muncul notifikasi error "*File harus berupa file Excel (.xls atau .xlsx)"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="160"><span class="badge log pass-bg mr-2">Pass</span>Mendownload File Template Untuk Data Import</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusDownloadTemplate.clickBtnDownloadTemplate()">
+                <span>Given Pengguna menekan tombol download template</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusDownloadTemplate.verifyDownloadTemplate()">
+                <span>Then Pengguna berhasil mendownload file template</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="163"><span class="badge log pass-bg mr-2">Pass</span>Menguji Upload File Excel Kosongan dalam Import Status</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickMenuImport()">
+                <span>Given Pengguna2 menekan tombol menu Import di bagian kiri menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickSubMenuStatusAktif()">
+                <span>And Pengguna2 menekan tombol submenu Import Status Aktif</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickBtnChooseFile()">
+                <span>When Pengguna2 menekan tombol choose file dan memilih file excel kosongan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusKosongan.clickBtnImport()">
+                <span>And Pengguna2 menekan tombol import</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.importStatus.ImportStatusKosongan.verifyImportExcel(java.lang.String)">
+                <span>Then Muncul alert ""</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="169"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Departements Setting</p>
+            <p class="text-sm">
+              <span>3:35:11 PM</span> / <span>00:00:13:153</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Departements Setting</h5>
+<span class='badge badge-success'>03.03.2025 3:35:11 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:35:24 PM</span>
+<span class='badge badge-default'>00:00:13:153</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=169</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="170"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan departement baru</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given Pengguna memasukkan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step01()">
+                <span>And Admin tekan menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step02()">
+                <span>And Admin klik sub menu unit setting</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step03()">
+                <span>When Admin tekan tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step04()">
+                <span>And Admin memilih pilihan Credit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step05()">
+                <span>And Admin tekan tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdefinition.step06()">
+                <span>Then Unit setting berhasil ditambahkan</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="178"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Departements Setting Data Kosong</p>
+            <p class="text-sm">
+              <span>3:35:24 PM</span> / <span>00:00:14:951</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Departements Setting Data Kosong</h5>
+<span class='badge badge-success'>03.03.2025 3:35:24 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:35:39 PM</span>
+<span class='badge badge-default'>00:00:14:951</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=178</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="179"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan departement baru dengan data kosong</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given Pengguna login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step01()">
+                <span>And klik menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step02()">
+                <span>And Admin tekan sub menu unit setting</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step03()">
+                <span>When Admin klik tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step04()">
+                <span>And Admin mengisi dengan data kosong</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step05()">
+                <span>And Admin klik tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdatakosongdefinition.step06()">
+                <span>Then Unit setting gagal ditambahkan</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="187"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Departements Setting Data Duplikat</p>
+            <p class="text-sm">
+              <span>3:35:39 PM</span> / <span>00:00:13:157</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Departements Setting Data Duplikat</h5>
+<span class='badge badge-success'>03.03.2025 3:35:39 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:35:52 PM</span>
+<span class='badge badge-default'>00:00:13:157</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=187</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan departement baru dengan data duplikat</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step01()">
+                <span>And tekan menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step02()">
+                <span>And tekan sub menu unit setting</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step03()">
+                <span>When klik tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step04()">
+                <span>And pilih pilihan Credit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step05()">
+                <span>And klik tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step06()">
+                <span>Then gagal ditambahkan</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="196"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Departements Setting</p>
+            <p class="text-sm">
+              <span>3:35:52 PM</span> / <span>00:00:08:794</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Departements Setting</h5>
+<span class='badge badge-success'>03.03.2025 3:35:52 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:36:01 PM</span>
+<span class='badge badge-default'>00:00:08:794</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=196</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="197"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan departement baru</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna3 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step01()">
+                <span>And tekan menu management.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step02()">
+                <span>And klik sub menu unit setting</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step03()">
+                <span>When Admin tekan tombol hapus pada data yang akan dihapus</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettinghapusdefinition.step06()">
+                <span>Then Unit setting berhasil dihapus</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="203"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:36:01 PM</span> / <span>00:00:27:303</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:36:01 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:36:29 PM</span>
+<span class='badge badge-default'>00:00:27:303</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=203</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="204"><span class="badge log fail-bg mr-2">Fail</span>Admin menambahkan posisi baru</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna4 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step01()">
+                <span>And Admin klik menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step02()">
+                <span>And Admin klik sub menu posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step03()">
+                <span>When Admin menekan tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step04()">
+                <span>And Admin mengisi posisi Admin 1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step05()">
+                <span>And Admin memilih pilihan departement Credit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step06()">
+                <span>And Admin menekan tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.aplikasihadir.steps.posisi.posisidefinition.step07()">
+                <span>Then Posisi berhasil ditambahkan</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4db9e0340412bf1f3872cf5f9d6abaf2, findElement {value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50902/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4db9e0340412bf1f3872cf5f9d6abaf2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisidefinition.step07(posisidefinition.java:69)
+	at ?.Posisi berhasil ditambahkan(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/10_TambahPosisi.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="213"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:36:29 PM</span> / <span>00:00:16:137</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:36:29 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:36:45 PM</span>
+<span class='badge badge-default'>00:00:16:137</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=213</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="214"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan posisi baru</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna5 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step01()">
+                <span>Given klik menu management.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step02()">
+                <span>And Admin tekan sub menu posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step03()">
+                <span>When tekan tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step04()">
+                <span>And Admin pilih pilihan departement Credit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step05()">
+                <span>And tekan tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiKosongdefinition.step06()">
+                <span>Then Posisi gagal ditambahkan</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="222"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi departemen kosong</p>
+            <p class="text-sm">
+              <span>3:36:45 PM</span> / <span>00:00:15:008</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Posisi departemen kosong</h5>
+<span class='badge badge-success'>03.03.2025 3:36:45 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:37:00 PM</span>
+<span class='badge badge-default'>00:00:15:008</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=222</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="223"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan posisi baru</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna6 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step01()">
+                <span>And pengguna tekan menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step02()">
+                <span>And tekan sub menu posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step03()">
+                <span>When menekan tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step04()">
+                <span>And mengisi posisi Admin 1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step05()">
+                <span>And menekan tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaDepartementKosongdefinition.step06()">
+                <span>Then Data gagal ditambahkan</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="231"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:37:00 PM</span> / <span>00:00:13:889</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:37:00 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:37:14 PM</span>
+<span class='badge badge-default'>00:00:13:889</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=231</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="232"><span class="badge log pass-bg mr-2">Pass</span>Admin menambahkan posisi baru</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna7 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step01()">
+                <span>And pengguna klik menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step02()">
+                <span>And pengguna tekan sub menu posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step03()">
+                <span>When pengguna menekan tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step04()">
+                <span>And pengguna menekan tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiNamaPosisiDanDepartementKosongdefinition.step05()">
+                <span>Then pengguna gagal menambahkan data</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="239"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:37:14 PM</span> / <span>00:00:27:215</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:37:14 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:37:41 PM</span>
+<span class='badge badge-default'>00:00:27:215</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=239</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="240"><span class="badge log fail-bg mr-2">Fail</span>Admin menambahkan posisi baru</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna8 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step01()">
+                <span>And Pengguna klik menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step02()">
+                <span>And Pengguna klik sub menu posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step03()">
+                <span>When Pengguna menekan tombol tambahkan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step04()">
+                <span>And Pengguna mengisi posisi Admin 1</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step05()">
+                <span>And Pengguna memilih pilihan departement Credit Card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step06()">
+                <span>And Pengguna menekan tombol tambah</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07()">
+                <span>Then Pengguna gagal menambahkan data</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text']"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4db9e0340412bf1f3872cf5f9d6abaf2, findElement {value=//input[@id = 'name' and @name = 'name' and @placeholder = 'Nama Position' and @type = 'text'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50902/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4db9e0340412bf1f3872cf5f9d6abaf2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.aplikasihadir.steps.posisi.posisiDataDuplikatdefinition.step07(posisiDataDuplikatdefinition.java:69)
+	at ?.Pengguna gagal menambahkan data(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/14_TambahPosisiDataDuplikat.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="249"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:37:41 PM</span> / <span>00:00:39:190</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:37:41 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:38:20 PM</span>
+<span class='badge badge-default'>00:00:39:190</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=249</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="250"><span class="badge log fail-bg mr-2">Fail</span>Admin mengedit posisi</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna9 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.unitSetting.unitsettingdataduplikatdefinition.step01()">
+                <span>And tekan menu management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.step02()">
+                <span>And Pengguna tekan sub menu posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.step03()">
+                <span>When Admin klik titik tiga pada posisi yang akan diedit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.step04()">
+                <span>And Admin klik edit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.step05()">
+                <span>And Admin mengedit Admin 1 menjadi Admin 2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.step06()">
+                <span>And Admin menekan tombol simpan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.aplikasihadir.steps.posisi.editposisidefinition.step07(java.lang.String)">
+                <span>Then List yang diperbaharui menjadi "Admin 2"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[(text() = 'Admin 2' or . = 'Admin 2')]"}
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4db9e0340412bf1f3872cf5f9d6abaf2, findElement {value=//h6[(text() = 'Admin 2' or . = 'Admin 2')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\GLENAD~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50902/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4db9e0340412bf1f3872cf5f9d6abaf2
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.aplikasihadir.pages.editposisipage.verify(editposisipage.java:94)
+	at com.aplikasihadir.steps.posisi.editposisidefinition.step07(editposisidefinition.java:62)
+	at ?.List yang diperbaharui menjadi "Admin 2"(file:///G:/applications/Java-program/Aplikasi%20Hadir-Revisi/src/test/resources/features/15_EditPosisi.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="259"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:38:20 PM</span> / <span>00:00:18:148</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:38:20 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:38:38 PM</span>
+<span class='badge badge-default'>00:00:18:148</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=259</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="260"><span class="badge log pass-bg mr-2">Pass</span>Admin mengedit posisi</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna10 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step01()">
+                <span>And klik menu management!</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step02()">
+                <span>And Pengguna klik sub menu posisi.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step03()">
+                <span>When Admin tekan titik tiga pada posisi yang akan diedit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step04()">
+                <span>And Admin tekan edit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step05()">
+                <span>And Admin mengosongkan nama posisi</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step06()">
+                <span>And Admin klik tombol simpan</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.editPosisiNamaPosisiKosongdefinition.step07()">
+                <span>Then Posisi gagal diedit</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="269"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:38:38 PM</span> / <span>00:00:23:064</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:38:38 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:39:01 PM</span>
+<span class='badge badge-default'>00:00:23:064</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=269</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="270"><span class="badge log pass-bg mr-2">Pass</span>Admin hapus posisi</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna11 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.step01()">
+                <span>And tekan menu management,</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.step02()">
+                <span>And Pengguna tekan sub menu posisi,</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.step03()">
+                <span>When Admin klik titik tiga pada posisi yang akan dihapus,</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.step04()">
+                <span>And Admin klik hapus</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.step05()">
+                <span>And Admin klik tombol ya</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.hapusposisidefinition.step06()">
+                <span>Then Data terhapus</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="278"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Tambah Posisi</p>
+            <p class="text-sm">
+              <span>3:39:01 PM</span> / <span>00:00:13:867</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Tambah Posisi</h5>
+<span class='badge badge-success'>03.03.2025 3:39:01 PM</span>
+<span class='badge badge-danger'>03.03.2025 3:39:15 PM</span>
+<span class='badge badge-default'>00:00:13:867</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=278</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="279"><span class="badge log pass-bg mr-2">Pass</span>Admin hapus posisi</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.cariposisidefinition.loginHadir(java.lang.String,java.lang.String)">
+                <span>Given pengguna12 login dengan email "admin@hadir.com" dan password "admin@hadir"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.cariposisidefinition.step01()">
+                <span>And Admin tekan menu management,</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.cariposisidefinition.step02()">
+                <span>And Pengguna tekan sub menu posisi.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.cariposisidefinition.step03()">
+                <span>When Ketik nama Admin 2</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.cariposisidefinition.step04()">
+                <span>And Klik tombol search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.aplikasihadir.steps.posisi.cariposisidefinition.step05()">
+                <span>Then Data Ditemukan</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:36:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='203' id='212'>Then Posisi berhasil ditambahkan</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru.Then Posisi berhasil ditambahkan</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:37:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='239' id='248'>Then Pengguna gagal menambahkan data</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru.Then Pengguna gagal menambahkan data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:38:05 PM</td>
+<td>
+<a href="#" class="linked" test-id='249' id='258'>Then List yang diperbaharui menjadi "Admin 2"</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin mengedit posisi.Then List yang diperbaharui menjadi "Admin 2"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">15</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@pulangCepat</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@pulangCepat</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">@medium</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@medium</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:32:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin Off dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">@posisi</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@posisi</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:36:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='203' id='204'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:36:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='213' id='214'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:36:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='222' id='223'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi departemen kosong.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:37:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='231' id='232'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:37:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='239' id='240'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:37:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='249' id='250'>Admin mengedit posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin mengedit posisi</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='259' id='260'>Admin mengedit posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin mengedit posisi</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='269' id='270'>Admin hapus posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin hapus posisi</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:39:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='278' id='279'>Admin hapus posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin hapus posisi</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@negative</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@negative</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin Off dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='178' id='179'>Admin menambahkan departement baru dengan data kosong</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting Data Kosong.Admin menambahkan departement baru dengan data kosong</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='187' id='188'>Admin menambahkan departement baru dengan data duplikat</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting Data Duplikat.Admin menambahkan departement baru dengan data duplikat</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:36:29 PM</td>
+<td>
+<a href="#" class="linked" test-id='213' id='214'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:36:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='222' id='223'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi departemen kosong.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:37:00 PM</td>
+<td>
+<a href="#" class="linked" test-id='231' id='232'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:37:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='239' id='240'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='259' id='260'>Admin mengedit posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin mengedit posisi</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@major</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@major</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@terlambat</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@terlambat</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+</span>
+<p class="name">@test</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:32:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin Off dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@off</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@off</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin Off dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@koreksi</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@koreksi</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:32:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@unitSetting</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@unitSetting</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='169' id='170'>Admin menambahkan departement baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting.Admin menambahkan departement baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='178' id='179'>Admin menambahkan departement baru dengan data kosong</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting Data Kosong.Admin menambahkan departement baru dengan data kosong</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='187' id='188'>Admin menambahkan departement baru dengan data duplikat</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting Data Duplikat.Admin menambahkan departement baru dengan data duplikat</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='196' id='197'>Admin menambahkan departement baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting.Admin menambahkan departement baru</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@positive</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@positive</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:32:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='169' id='170'>Admin menambahkan departement baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting.Admin menambahkan departement baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='196' id='197'>Admin menambahkan departement baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Departements Setting.Admin menambahkan departement baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:36:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='203' id='204'>Admin menambahkan posisi baru</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin menambahkan posisi baru</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:37:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='249' id='250'>Admin mengedit posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin mengedit posisi</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:38:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='269' id='270'>Admin hapus posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin hapus posisi</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:39:01 PM</td>
+<td>
+<a href="#" class="linked" test-id='278' id='279'>Admin hapus posisi</a>
+<div class="">
+<span class="badge badge-default">Tambah Posisi.Admin hapus posisi</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@Import</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Import</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='148' id='149'>Menguji Upload File dalam Import Status</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Aplikasi Hadir.Menguji Upload File dalam Import Status</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='148' id='156'>Menguji Upload File dalam Import Status (Selain Excel)</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Aplikasi Hadir.Menguji Upload File dalam Import Status (Selain Excel)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:03 PM</td>
+<td>
+<a href="#" class="linked" test-id='148' id='160'>Mendownload File Template Untuk Data Import</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Aplikasi Hadir.Mendownload File Template Untuk Data Import</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:35:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='148' id='163'>Menguji Upload File Excel Kosongan dalam Import Status</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Aplikasi Hadir.Menguji Upload File Excel Kosongan dalam Import Status</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@izin</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@izin</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='105'>Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengisi semua field dengan data yang valid dan terdapat izin terlambat yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='104' id='115'>Melakukan pengajuan izin terlambat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile.Melakukan pengajuan izin terlambat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='121'>Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengisi semua field dengan data yang valid</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:24 PM</td>
+<td>
+<a href="#" class="linked" test-id='120' id='129'>Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile.Melakukan pengajuan izin pulang cepat dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin Off dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Negative</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Negative</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya</a>
+<div class="">
+<span class="badge badge-default">Absen Masuk dan Keluar.Mencoba kembali absen masuk setelah sudah melakukan absen masuk sebelumnya</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='62'>Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya</a>
+<div class="">
+<span class="badge badge-default">Absen Masuk dan Keluar.Mencoba kembali absen keluar setelah sudah melakukan absen keluar sebelumnya</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@critical</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@critical</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:31:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='66'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFO"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:32:38 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='81'>Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengisi semua field dengan data Tipe absen "WFH"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:15 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='93'>Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen setelah melakukan absensi dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:33:26 PM</td>
+<td>
+<a href="#" class="linked" test-id='65' id='97'>Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Koreksi Absen di Aplikasi Hadir.Melakukan koreksi absen dengan mengisi salah satu field yaitu jam masuk saja</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:27 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='135'>Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin off dan mengisi semua field dengan kondisi terdapat data yang belum di approve</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:34:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='134' id='143'>Melakukan pengajuan izin Off dengan mengosongkan semua field</a>
+<div class="">
+<span class="badge badge-default">Pengujian Fitur Izin Off di Aplikasi Hadir Mobile.Melakukan pengajuan izin Off dengan mengosongkan semua field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 3, 2025 03:26:47 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 3, 2025 03:39:16 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>16</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>3</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='84%'>
+<b>16</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='15%'><b>3</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='90%'><b>30</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='9%'><b>3</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='98%'><b>229</b> steps passed</small></div>
+<div>
+<small data-tooltip='1%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Absen Masuk dan Keluar":303.702,"Pengujian Fitur Koreksi Absen di Aplikasi Hadir":109.445,"Pengujian Fitur Izin Terlambat di Aplikasi Hadir Mobile":27.748,"Pengujian Fitur Izin Pulang Cepat di Aplikasi Hadir Mobile":16.6,"Pengujian Fitur Izin Off di Aplikasi Hadir Mobile":17.434,"Pengujian Fitur Aplikasi Hadir":26.589,"Tambah Departements Setting":13.153,"Tambah Departements Setting Data Kosong":14.951,"Tambah Departements Setting Data Duplikat":13.157,"Tambah Departements Setting":8.794,"Tambah Posisi":27.303,"Tambah Posisi":16.137,"Tambah Posisi departemen kosong":15.008,"Tambah Posisi":13.889,"Tambah Posisi":27.215,"Tambah Posisi":39.19,"Tambah Posisi":18.148,"Tambah Posisi":23.064,"Tambah Posisi":13.867
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@pulangCepat</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@medium</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@posisi</td>
+<td>6</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+<tr>
+<td>@negative</td>
+<td>10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>90.909%</td>
+</tr>
+<tr>
+<td>@major</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@terlambat</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@off</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@koreksi</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@unitSetting</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@positive</td>
+<td>10</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>83.333%</td>
+</tr>
+<tr>
+<td>@Import</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@izin</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Negative</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@critical</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>11</td>
+</tr>
+<tr>
+<td>os</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 16,
+failParent: 3,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 30,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 229,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
