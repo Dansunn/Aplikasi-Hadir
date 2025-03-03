@@ -30,3 +30,6 @@ Laporan pengujian tersedia dalam format **HTML** menggunakan **ExtentReports**. 
 2. Jalankan perintah berikut:
    ```sh
    mvn clean tes
+
+## Hasil Pengujian Menggunakan Extent Reports
+![Screenshot 2025-03-03 211214](https://github.com/user-attachments/assets/2f8f20d1-c6d5-4ec4-b6d2-e60d839d98e7)
